@@ -81,24 +81,27 @@ extension GCDVC {
         let queue = DispatchQueue(label: "foo", attributes: .concurrent)
         queue.async {
             //模拟耗时操作
-//            DispatchQueue.global().async {
-//                sleep(10)
+            NetWorkHelper.tool.loginRequest(success: { (result) in
                 RYQLog("任务A执行完成")
-//            }
+            }, fail: { (error) in
+                RYQLog("任务A执行完成")
+            })
         }
         queue.async {
             //模拟耗时操作
-//            DispatchQueue.global().async {
-//                sleep(10)
+            NetWorkHelper.tool.loginRequest(success: { (result) in
                 RYQLog("任务B执行完成")
-//            }
+            }, fail: { (error) in
+                RYQLog("任务B执行完成")
+            })
         }
         queue.async(flags: .barrier) {
             //模拟耗时操作
-//            DispatchQueue.global().async {
-//                sleep(3)
+            NetWorkHelper.tool.loginRequest(success: { (result) in
                 RYQLog("任务C执行完成")
-//            }
+            }, fail: { (error) in
+                RYQLog("任务C执行完成")
+            })
         }
     }
 }
