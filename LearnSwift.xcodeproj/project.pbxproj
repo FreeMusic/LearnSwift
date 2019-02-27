@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B2B6A2222654B3009CF9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */; };
+		18B2B6A4222654B3009CF9C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6A3222654B3009CF9C9 /* ViewController.swift */; };
+		18B2B6A7222654B3009CF9C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B2B6A5222654B3009CF9C9 /* Main.storyboard */; };
+		18B2B6A9222654B4009CF9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B2B6A8222654B4009CF9C9 /* Assets.xcassets */; };
+		18B2B6AC222654B4009CF9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B2B6AA222654B4009CF9C9 /* LaunchScreen.storyboard */; };
+		18B2B6B7222654B4009CF9C9 /* LearnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6B6222654B4009CF9C9 /* LearnSwiftTests.swift */; };
+		18B2B6C2222654B4009CF9C9 /* LearnSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6C1222654B4009CF9C9 /* LearnSwiftUITests.swift */; };
+		18B2B700222654DE009CF9C9 /* CalculationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D1222654DE009CF9C9 /* CalculationVC.swift */; };
+		18B2B701222654DE009CF9C9 /* HistogramVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D2222654DE009CF9C9 /* HistogramVC.swift */; };
+		18B2B702222654DE009CF9C9 /* IrregularGradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D3222654DE009CF9C9 /* IrregularGradientVC.swift */; };
+		18B2B703222654DE009CF9C9 /* LayerAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D4222654DE009CF9C9 /* LayerAnimationVC.swift */; };
+		18B2B704222654DE009CF9C9 /* PieChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D5222654DE009CF9C9 /* PieChartVC.swift */; };
+		18B2B705222654DE009CF9C9 /* QuadRaticBezierVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D6222654DE009CF9C9 /* QuadRaticBezierVC.swift */; };
+		18B2B706222654DE009CF9C9 /* SpiderWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D7222654DE009CF9C9 /* SpiderWebVC.swift */; };
+		18B2B707222654DE009CF9C9 /* TextLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D8222654DE009CF9C9 /* TextLayerVC.swift */; };
+		18B2B708222654DE009CF9C9 /* TripleBezierVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6D9222654DE009CF9C9 /* TripleBezierVC.swift */; };
+		18B2B709222654DE009CF9C9 /* PaintLineCapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6DC222654DE009CF9C9 /* PaintLineCapView.swift */; };
+		18B2B70A222654DE009CF9C9 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6DE222654DE009CF9C9 /* PieChartView.swift */; };
+		18B2B70B222654DE009CF9C9 /* CurveDrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E0222654DE009CF9C9 /* CurveDrawVC.swift */; };
+		18B2B70C222654DE009CF9C9 /* MacroDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E1222654DE009CF9C9 /* MacroDefinition.swift */; };
+		18B2B70D222654DE009CF9C9 /* PaintCilcleViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E2222654DE009CF9C9 /* PaintCilcleViewVC.swift */; };
+		18B2B70E222654DE009CF9C9 /* PaintDottedLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E3222654DE009CF9C9 /* PaintDottedLineVC.swift */; };
+		18B2B70F222654DE009CF9C9 /* PaintLineCapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E4222654DE009CF9C9 /* PaintLineCapVC.swift */; };
+		18B2B710222654DE009CF9C9 /* PaintLineViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E5222654DE009CF9C9 /* PaintLineViewVC.swift */; };
+		18B2B711222654DE009CF9C9 /* PaintRoundedRectangleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E6222654DE009CF9C9 /* PaintRoundedRectangleVC.swift */; };
+		18B2B712222654DE009CF9C9 /* PaintShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E7222654DE009CF9C9 /* PaintShadowView.swift */; };
+		18B2B713222654DE009CF9C9 /* PaintTrajectoryViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E8222654DE009CF9C9 /* PaintTrajectoryViewVC.swift */; };
+		18B2B714222654DE009CF9C9 /* PaintTriangleViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6E9222654DE009CF9C9 /* PaintTriangleViewVC.swift */; };
+		18B2B715222654DE009CF9C9 /* UIColor+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6EB222654DE009CF9C9 /* UIColor+Category.swift */; };
+		18B2B716222654DE009CF9C9 /* BeautyGirls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6ED222654DE009CF9C9 /* BeautyGirls.swift */; };
+		18B2B717222654DE009CF9C9 /* DataStructureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6EE222654DE009CF9C9 /* DataStructureVC.swift */; };
+		18B2B718222654DE009CF9C9 /* ArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F0222654DE009CF9C9 /* ArrayVC.swift */; };
+		18B2B719222654DE009CF9C9 /* RYQArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F2222654DE009CF9C9 /* RYQArray.m */; };
+		18B2B71A222654DE009CF9C9 /* BubbleSortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F4222654DE009CF9C9 /* BubbleSortVC.swift */; };
+		18B2B71B222654DE009CF9C9 /* HeapSortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F5222654DE009CF9C9 /* HeapSortVC.swift */; };
+		18B2B71C222654DE009CF9C9 /* HillSortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F6222654DE009CF9C9 /* HillSortVC.swift */; };
+		18B2B71D222654DE009CF9C9 /* InsertionSortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F7222654DE009CF9C9 /* InsertionSortVC.swift */; };
+		18B2B71E222654DE009CF9C9 /* MergeSortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F8222654DE009CF9C9 /* MergeSortVC.swift */; };
+		18B2B71F222654DE009CF9C9 /* QuickSortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6F9222654DE009CF9C9 /* QuickSortVC.swift */; };
+		18B2B720222654DE009CF9C9 /* SelectionSortVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6FA222654DE009CF9C9 /* SelectionSortVC.swift */; };
+		18B2B721222654DE009CF9C9 /* SortAlgorithmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6FB222654DE009CF9C9 /* SortAlgorithmVC.swift */; };
+		18B2B722222654DE009CF9C9 /* GCDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6FE222654DE009CF9C9 /* GCDVC.swift */; };
+		18B2B723222654DE009CF9C9 /* MultiThreadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6FF222654DE009CF9C9 /* MultiThreadVC.swift */; };
+		18B2B73222265502009CF9C9 /* RYQTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B73022265502009CF9C9 /* RYQTableViewVC.swift */; };
+		18B2B73322265502009CF9C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B73122265502009CF9C9 /* BaseViewController.swift */; };
+		1F2AAFEB40635279242C0C39 /* Pods_LearnSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */; };
+		9AF8CF1033CFEECF0064F820 /* Pods_LearnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */; };
+		E212202AE8A35240E90CA339 /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF0F5DC31610A41EECBAB9 /* Pods_LearnSwiftTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B2B6B3222654B4009CF9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B2B696222654B3009CF9C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B2B69D222654B3009CF9C9;
+			remoteInfo = LearnSwift;
+		};
+		18B2B6BE222654B4009CF9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B2B696222654B3009CF9C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B2B69D222654B3009CF9C9;
+			remoteInfo = LearnSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B2B69E222654B3009CF9C9 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18B2B6A3222654B3009CF9C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18B2B6A6222654B3009CF9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B2B6A8222654B4009CF9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B2B6AB222654B4009CF9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B2B6AD222654B4009CF9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B2B6B2222654B4009CF9C9 /* LearnSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2B6B6222654B4009CF9C9 /* LearnSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftTests.swift; sourceTree = "<group>"; };
+		18B2B6B8222654B4009CF9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B2B6BD222654B4009CF9C9 /* LearnSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2B6C1222654B4009CF9C9 /* LearnSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUITests.swift; sourceTree = "<group>"; };
+		18B2B6C3222654B4009CF9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B2B6D1222654DE009CF9C9 /* CalculationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationVC.swift; sourceTree = "<group>"; };
+		18B2B6D2222654DE009CF9C9 /* HistogramVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistogramVC.swift; sourceTree = "<group>"; };
+		18B2B6D3222654DE009CF9C9 /* IrregularGradientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrregularGradientVC.swift; sourceTree = "<group>"; };
+		18B2B6D4222654DE009CF9C9 /* LayerAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerAnimationVC.swift; sourceTree = "<group>"; };
+		18B2B6D5222654DE009CF9C9 /* PieChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartVC.swift; sourceTree = "<group>"; };
+		18B2B6D6222654DE009CF9C9 /* QuadRaticBezierVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadRaticBezierVC.swift; sourceTree = "<group>"; };
+		18B2B6D7222654DE009CF9C9 /* SpiderWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiderWebVC.swift; sourceTree = "<group>"; };
+		18B2B6D8222654DE009CF9C9 /* TextLayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLayerVC.swift; sourceTree = "<group>"; };
+		18B2B6D9222654DE009CF9C9 /* TripleBezierVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleBezierVC.swift; sourceTree = "<group>"; };
+		18B2B6DC222654DE009CF9C9 /* PaintLineCapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintLineCapView.swift; sourceTree = "<group>"; };
+		18B2B6DE222654DE009CF9C9 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		18B2B6E0222654DE009CF9C9 /* CurveDrawVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveDrawVC.swift; sourceTree = "<group>"; };
+		18B2B6E1222654DE009CF9C9 /* MacroDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefinition.swift; sourceTree = "<group>"; };
+		18B2B6E2222654DE009CF9C9 /* PaintCilcleViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintCilcleViewVC.swift; sourceTree = "<group>"; };
+		18B2B6E3222654DE009CF9C9 /* PaintDottedLineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintDottedLineVC.swift; sourceTree = "<group>"; };
+		18B2B6E4222654DE009CF9C9 /* PaintLineCapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintLineCapVC.swift; sourceTree = "<group>"; };
+		18B2B6E5222654DE009CF9C9 /* PaintLineViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintLineViewVC.swift; sourceTree = "<group>"; };
+		18B2B6E6222654DE009CF9C9 /* PaintRoundedRectangleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintRoundedRectangleVC.swift; sourceTree = "<group>"; };
+		18B2B6E7222654DE009CF9C9 /* PaintShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintShadowView.swift; sourceTree = "<group>"; };
+		18B2B6E8222654DE009CF9C9 /* PaintTrajectoryViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintTrajectoryViewVC.swift; sourceTree = "<group>"; };
+		18B2B6E9222654DE009CF9C9 /* PaintTriangleViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintTriangleViewVC.swift; sourceTree = "<group>"; };
+		18B2B6EB222654DE009CF9C9 /* UIColor+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Category.swift"; sourceTree = "<group>"; };
+		18B2B6ED222654DE009CF9C9 /* BeautyGirls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyGirls.swift; sourceTree = "<group>"; };
+		18B2B6EE222654DE009CF9C9 /* DataStructureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructureVC.swift; sourceTree = "<group>"; };
+		18B2B6F0222654DE009CF9C9 /* ArrayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayVC.swift; sourceTree = "<group>"; };
+		18B2B6F1222654DE009CF9C9 /* RYQArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYQArray.h; sourceTree = "<group>"; };
+		18B2B6F2222654DE009CF9C9 /* RYQArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYQArray.m; sourceTree = "<group>"; };
+		18B2B6F4222654DE009CF9C9 /* BubbleSortVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleSortVC.swift; sourceTree = "<group>"; };
+		18B2B6F5222654DE009CF9C9 /* HeapSortVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapSortVC.swift; sourceTree = "<group>"; };
+		18B2B6F6222654DE009CF9C9 /* HillSortVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HillSortVC.swift; sourceTree = "<group>"; };
+		18B2B6F7222654DE009CF9C9 /* InsertionSortVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSortVC.swift; sourceTree = "<group>"; };
+		18B2B6F8222654DE009CF9C9 /* MergeSortVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSortVC.swift; sourceTree = "<group>"; };
+		18B2B6F9222654DE009CF9C9 /* QuickSortVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSortVC.swift; sourceTree = "<group>"; };
+		18B2B6FA222654DE009CF9C9 /* SelectionSortVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionSortVC.swift; sourceTree = "<group>"; };
+		18B2B6FB222654DE009CF9C9 /* SortAlgorithmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortAlgorithmVC.swift; sourceTree = "<group>"; };
+		18B2B6FE222654DE009CF9C9 /* GCDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDVC.swift; sourceTree = "<group>"; };
+		18B2B6FF222654DE009CF9C9 /* MultiThreadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiThreadVC.swift; sourceTree = "<group>"; };
+		18B2B73022265502009CF9C9 /* RYQTableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYQTableViewVC.swift; sourceTree = "<group>"; };
+		18B2B73122265502009CF9C9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		18B2B73722265607009CF9C9 /* LearnSwiftBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnSwiftBridgeHeader.h; sourceTree = "<group>"; };
+		49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717DF0E06A5D8F1DE3A5A4F0 /* Pods-LearnSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.release.xcconfig"; sourceTree = "<group>"; };
+		843DE79157BCBD259307775D /* Pods-LearnSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftUITests/Pods-LearnSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FF194A1BB2682E3AECB7DF3 /* Pods-LearnSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftTests/Pods-LearnSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		92A6778726E0CC0E1F8CFF4B /* Pods-LearnSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftUITests/Pods-LearnSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DBA45B91F0A6FD5FBAC9DB83 /* Pods-LearnSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		EB58104BFB4407171E107D83 /* Pods-LearnSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftTests/Pods-LearnSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0FF0F5DC31610A41EECBAB9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B2B69B222654B3009CF9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF8CF1033CFEECF0064F820 /* Pods_LearnSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2B6AF222654B4009CF9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E212202AE8A35240E90CA339 /* Pods_LearnSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2B6BA222654B4009CF9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2AAFEB40635279242C0C39 /* Pods_LearnSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B2B695222654B3009CF9C9 = {
+			isa = PBXGroup;
+			children = (
+				18B2B6CF222654DE009CF9C9 /* 贝塞尔曲线和Layer画图 */,
+				18B2B6FC222654DE009CF9C9 /* 多线程 */,
+				18B2B6EC222654DE009CF9C9 /* 数据结构 */,
+				18B2B6F3222654DE009CF9C9 /* 算法排序 */,
+				18B2B6A0222654B3009CF9C9 /* LearnSwift */,
+				18B2B6B5222654B4009CF9C9 /* LearnSwiftTests */,
+				18B2B6C0222654B4009CF9C9 /* LearnSwiftUITests */,
+				18B2B69F222654B3009CF9C9 /* Products */,
+				D294C9B12526F46220AD993F /* Pods */,
+				392B35855EAD215FD60AF9A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18B2B69F222654B3009CF9C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B69E222654B3009CF9C9 /* LearnSwift.app */,
+				18B2B6B2222654B4009CF9C9 /* LearnSwiftTests.xctest */,
+				18B2B6BD222654B4009CF9C9 /* LearnSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B2B6A0222654B3009CF9C9 /* LearnSwift */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B73122265502009CF9C9 /* BaseViewController.swift */,
+				18B2B73022265502009CF9C9 /* RYQTableViewVC.swift */,
+				18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */,
+				18B2B6A3222654B3009CF9C9 /* ViewController.swift */,
+				18B2B6A5222654B3009CF9C9 /* Main.storyboard */,
+				18B2B6A8222654B4009CF9C9 /* Assets.xcassets */,
+				18B2B6AA222654B4009CF9C9 /* LaunchScreen.storyboard */,
+				18B2B6AD222654B4009CF9C9 /* Info.plist */,
+				18B2B73722265607009CF9C9 /* LearnSwiftBridgeHeader.h */,
+			);
+			path = LearnSwift;
+			sourceTree = "<group>";
+		};
+		18B2B6B5222654B4009CF9C9 /* LearnSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6B6222654B4009CF9C9 /* LearnSwiftTests.swift */,
+				18B2B6B8222654B4009CF9C9 /* Info.plist */,
+			);
+			path = LearnSwiftTests;
+			sourceTree = "<group>";
+		};
+		18B2B6C0222654B4009CF9C9 /* LearnSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6C1222654B4009CF9C9 /* LearnSwiftUITests.swift */,
+				18B2B6C3222654B4009CF9C9 /* Info.plist */,
+			);
+			path = LearnSwiftUITests;
+			sourceTree = "<group>";
+		};
+		18B2B6CF222654DE009CF9C9 /* 贝塞尔曲线和Layer画图 */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6D0222654DE009CF9C9 /* ComplexBezierPoint */,
+				18B2B6DA222654DE009CF9C9 /* ComplexBezierView */,
+				18B2B6DF222654DE009CF9C9 /* SimpleDraw */,
+				18B2B6EA222654DE009CF9C9 /* UIColor */,
+			);
+			path = "贝塞尔曲线和Layer画图";
+			sourceTree = "<group>";
+		};
+		18B2B6D0222654DE009CF9C9 /* ComplexBezierPoint */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6D1222654DE009CF9C9 /* CalculationVC.swift */,
+				18B2B6D2222654DE009CF9C9 /* HistogramVC.swift */,
+				18B2B6D3222654DE009CF9C9 /* IrregularGradientVC.swift */,
+				18B2B6D4222654DE009CF9C9 /* LayerAnimationVC.swift */,
+				18B2B6D5222654DE009CF9C9 /* PieChartVC.swift */,
+				18B2B6D6222654DE009CF9C9 /* QuadRaticBezierVC.swift */,
+				18B2B6D7222654DE009CF9C9 /* SpiderWebVC.swift */,
+				18B2B6D8222654DE009CF9C9 /* TextLayerVC.swift */,
+				18B2B6D9222654DE009CF9C9 /* TripleBezierVC.swift */,
+			);
+			path = ComplexBezierPoint;
+			sourceTree = "<group>";
+		};
+		18B2B6DA222654DE009CF9C9 /* ComplexBezierView */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6DB222654DE009CF9C9 /* PaintLineCapView */,
+				18B2B6DD222654DE009CF9C9 /* PieChartView */,
+			);
+			path = ComplexBezierView;
+			sourceTree = "<group>";
+		};
+		18B2B6DB222654DE009CF9C9 /* PaintLineCapView */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6DC222654DE009CF9C9 /* PaintLineCapView.swift */,
+			);
+			path = PaintLineCapView;
+			sourceTree = "<group>";
+		};
+		18B2B6DD222654DE009CF9C9 /* PieChartView */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6DE222654DE009CF9C9 /* PieChartView.swift */,
+			);
+			path = PieChartView;
+			sourceTree = "<group>";
+		};
+		18B2B6DF222654DE009CF9C9 /* SimpleDraw */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6E0222654DE009CF9C9 /* CurveDrawVC.swift */,
+				18B2B6E1222654DE009CF9C9 /* MacroDefinition.swift */,
+				18B2B6E2222654DE009CF9C9 /* PaintCilcleViewVC.swift */,
+				18B2B6E3222654DE009CF9C9 /* PaintDottedLineVC.swift */,
+				18B2B6E4222654DE009CF9C9 /* PaintLineCapVC.swift */,
+				18B2B6E5222654DE009CF9C9 /* PaintLineViewVC.swift */,
+				18B2B6E6222654DE009CF9C9 /* PaintRoundedRectangleVC.swift */,
+				18B2B6E7222654DE009CF9C9 /* PaintShadowView.swift */,
+				18B2B6E8222654DE009CF9C9 /* PaintTrajectoryViewVC.swift */,
+				18B2B6E9222654DE009CF9C9 /* PaintTriangleViewVC.swift */,
+			);
+			path = SimpleDraw;
+			sourceTree = "<group>";
+		};
+		18B2B6EA222654DE009CF9C9 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6EB222654DE009CF9C9 /* UIColor+Category.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		18B2B6EC222654DE009CF9C9 /* 数据结构 */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6ED222654DE009CF9C9 /* BeautyGirls.swift */,
+				18B2B6EE222654DE009CF9C9 /* DataStructureVC.swift */,
+				18B2B6EF222654DE009CF9C9 /* RYQArray */,
+			);
+			path = "数据结构";
+			sourceTree = "<group>";
+		};
+		18B2B6EF222654DE009CF9C9 /* RYQArray */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6F0222654DE009CF9C9 /* ArrayVC.swift */,
+				18B2B6F1222654DE009CF9C9 /* RYQArray.h */,
+				18B2B6F2222654DE009CF9C9 /* RYQArray.m */,
+			);
+			path = RYQArray;
+			sourceTree = "<group>";
+		};
+		18B2B6F3222654DE009CF9C9 /* 算法排序 */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6F4222654DE009CF9C9 /* BubbleSortVC.swift */,
+				18B2B6F5222654DE009CF9C9 /* HeapSortVC.swift */,
+				18B2B6F6222654DE009CF9C9 /* HillSortVC.swift */,
+				18B2B6F7222654DE009CF9C9 /* InsertionSortVC.swift */,
+				18B2B6F8222654DE009CF9C9 /* MergeSortVC.swift */,
+				18B2B6F9222654DE009CF9C9 /* QuickSortVC.swift */,
+				18B2B6FA222654DE009CF9C9 /* SelectionSortVC.swift */,
+				18B2B6FB222654DE009CF9C9 /* SortAlgorithmVC.swift */,
+			);
+			path = "算法排序";
+			sourceTree = "<group>";
+		};
+		18B2B6FC222654DE009CF9C9 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6FD222654DE009CF9C9 /* GCD */,
+				18B2B6FF222654DE009CF9C9 /* MultiThreadVC.swift */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		18B2B6FD222654DE009CF9C9 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				18B2B6FE222654DE009CF9C9 /* GCDVC.swift */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		392B35855EAD215FD60AF9A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */,
+				F0FF0F5DC31610A41EECBAB9 /* Pods_LearnSwiftTests.framework */,
+				49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D294C9B12526F46220AD993F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBA45B91F0A6FD5FBAC9DB83 /* Pods-LearnSwift.debug.xcconfig */,
+				717DF0E06A5D8F1DE3A5A4F0 /* Pods-LearnSwift.release.xcconfig */,
+				8FF194A1BB2682E3AECB7DF3 /* Pods-LearnSwiftTests.debug.xcconfig */,
+				EB58104BFB4407171E107D83 /* Pods-LearnSwiftTests.release.xcconfig */,
+				843DE79157BCBD259307775D /* Pods-LearnSwiftUITests.debug.xcconfig */,
+				92A6778726E0CC0E1F8CFF4B /* Pods-LearnSwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B2B69D222654B3009CF9C9 /* LearnSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2B6C6222654B4009CF9C9 /* Build configuration list for PBXNativeTarget "LearnSwift" */;
+			buildPhases = (
+				C4D2650B76096DFBEF661B65 /* [CP] Check Pods Manifest.lock */,
+				18B2B69A222654B3009CF9C9 /* Sources */,
+				18B2B69B222654B3009CF9C9 /* Frameworks */,
+				18B2B69C222654B3009CF9C9 /* Resources */,
+				44E89CA66F1FE914ED3162DE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnSwift;
+			productName = LearnSwift;
+			productReference = 18B2B69E222654B3009CF9C9 /* LearnSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B2B6B1222654B4009CF9C9 /* LearnSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2B6C9222654B4009CF9C9 /* Build configuration list for PBXNativeTarget "LearnSwiftTests" */;
+			buildPhases = (
+				01D49523BE530628F05D0B05 /* [CP] Check Pods Manifest.lock */,
+				18B2B6AE222654B4009CF9C9 /* Sources */,
+				18B2B6AF222654B4009CF9C9 /* Frameworks */,
+				18B2B6B0222654B4009CF9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B2B6B4222654B4009CF9C9 /* PBXTargetDependency */,
+			);
+			name = LearnSwiftTests;
+			productName = LearnSwiftTests;
+			productReference = 18B2B6B2222654B4009CF9C9 /* LearnSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B2B6BC222654B4009CF9C9 /* LearnSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2B6CC222654B4009CF9C9 /* Build configuration list for PBXNativeTarget "LearnSwiftUITests" */;
+			buildPhases = (
+				573E04C846D45E3657E62B90 /* [CP] Check Pods Manifest.lock */,
+				18B2B6B9222654B4009CF9C9 /* Sources */,
+				18B2B6BA222654B4009CF9C9 /* Frameworks */,
+				18B2B6BB222654B4009CF9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B2B6BF222654B4009CF9C9 /* PBXTargetDependency */,
+			);
+			name = LearnSwiftUITests;
+			productName = LearnSwiftUITests;
+			productReference = 18B2B6BD222654B4009CF9C9 /* LearnSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B2B696222654B3009CF9C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "橘子";
+				TargetAttributes = {
+					18B2B69D222654B3009CF9C9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					18B2B6B1222654B4009CF9C9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 18B2B69D222654B3009CF9C9;
+					};
+					18B2B6BC222654B4009CF9C9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 18B2B69D222654B3009CF9C9;
+					};
+				};
+			};
+			buildConfigurationList = 18B2B699222654B3009CF9C9 /* Build configuration list for PBXProject "LearnSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B2B695222654B3009CF9C9;
+			productRefGroup = 18B2B69F222654B3009CF9C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B2B69D222654B3009CF9C9 /* LearnSwift */,
+				18B2B6B1222654B4009CF9C9 /* LearnSwiftTests */,
+				18B2B6BC222654B4009CF9C9 /* LearnSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B2B69C222654B3009CF9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2B6AC222654B4009CF9C9 /* LaunchScreen.storyboard in Resources */,
+				18B2B6A9222654B4009CF9C9 /* Assets.xcassets in Resources */,
+				18B2B6A7222654B3009CF9C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2B6B0222654B4009CF9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2B6BB222654B4009CF9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01D49523BE530628F05D0B05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44E89CA66F1FE914ED3162DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		573E04C846D45E3657E62B90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D2650B76096DFBEF661B65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B2B69A222654B3009CF9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2B723222654DE009CF9C9 /* MultiThreadVC.swift in Sources */,
+				18B2B719222654DE009CF9C9 /* RYQArray.m in Sources */,
+				18B2B722222654DE009CF9C9 /* GCDVC.swift in Sources */,
+				18B2B704222654DE009CF9C9 /* PieChartVC.swift in Sources */,
+				18B2B718222654DE009CF9C9 /* ArrayVC.swift in Sources */,
+				18B2B73322265502009CF9C9 /* BaseViewController.swift in Sources */,
+				18B2B700222654DE009CF9C9 /* CalculationVC.swift in Sources */,
+				18B2B721222654DE009CF9C9 /* SortAlgorithmVC.swift in Sources */,
+				18B2B716222654DE009CF9C9 /* BeautyGirls.swift in Sources */,
+				18B2B720222654DE009CF9C9 /* SelectionSortVC.swift in Sources */,
+				18B2B70B222654DE009CF9C9 /* CurveDrawVC.swift in Sources */,
+				18B2B714222654DE009CF9C9 /* PaintTriangleViewVC.swift in Sources */,
+				18B2B70A222654DE009CF9C9 /* PieChartView.swift in Sources */,
+				18B2B705222654DE009CF9C9 /* QuadRaticBezierVC.swift in Sources */,
+				18B2B6A4222654B3009CF9C9 /* ViewController.swift in Sources */,
+				18B2B709222654DE009CF9C9 /* PaintLineCapView.swift in Sources */,
+				18B2B711222654DE009CF9C9 /* PaintRoundedRectangleVC.swift in Sources */,
+				18B2B71D222654DE009CF9C9 /* InsertionSortVC.swift in Sources */,
+				18B2B710222654DE009CF9C9 /* PaintLineViewVC.swift in Sources */,
+				18B2B6A2222654B3009CF9C9 /* AppDelegate.swift in Sources */,
+				18B2B71A222654DE009CF9C9 /* BubbleSortVC.swift in Sources */,
+				18B2B73222265502009CF9C9 /* RYQTableViewVC.swift in Sources */,
+				18B2B71F222654DE009CF9C9 /* QuickSortVC.swift in Sources */,
+				18B2B71C222654DE009CF9C9 /* HillSortVC.swift in Sources */,
+				18B2B712222654DE009CF9C9 /* PaintShadowView.swift in Sources */,
+				18B2B71E222654DE009CF9C9 /* MergeSortVC.swift in Sources */,
+				18B2B713222654DE009CF9C9 /* PaintTrajectoryViewVC.swift in Sources */,
+				18B2B717222654DE009CF9C9 /* DataStructureVC.swift in Sources */,
+				18B2B707222654DE009CF9C9 /* TextLayerVC.swift in Sources */,
+				18B2B701222654DE009CF9C9 /* HistogramVC.swift in Sources */,
+				18B2B715222654DE009CF9C9 /* UIColor+Category.swift in Sources */,
+				18B2B70F222654DE009CF9C9 /* PaintLineCapVC.swift in Sources */,
+				18B2B702222654DE009CF9C9 /* IrregularGradientVC.swift in Sources */,
+				18B2B708222654DE009CF9C9 /* TripleBezierVC.swift in Sources */,
+				18B2B71B222654DE009CF9C9 /* HeapSortVC.swift in Sources */,
+				18B2B70C222654DE009CF9C9 /* MacroDefinition.swift in Sources */,
+				18B2B70E222654DE009CF9C9 /* PaintDottedLineVC.swift in Sources */,
+				18B2B706222654DE009CF9C9 /* SpiderWebVC.swift in Sources */,
+				18B2B70D222654DE009CF9C9 /* PaintCilcleViewVC.swift in Sources */,
+				18B2B703222654DE009CF9C9 /* LayerAnimationVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2B6AE222654B4009CF9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2B6B7222654B4009CF9C9 /* LearnSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2B6B9222654B4009CF9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2B6C2222654B4009CF9C9 /* LearnSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B2B6B4222654B4009CF9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B2B69D222654B3009CF9C9 /* LearnSwift */;
+			targetProxy = 18B2B6B3222654B4009CF9C9 /* PBXContainerItemProxy */;
+		};
+		18B2B6BF222654B4009CF9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B2B69D222654B3009CF9C9 /* LearnSwift */;
+			targetProxy = 18B2B6BE222654B4009CF9C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B2B6A5222654B3009CF9C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B2B6A6222654B3009CF9C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B2B6AA222654B4009CF9C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B2B6AB222654B4009CF9C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B2B6C4222654B4009CF9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B2B6C5222654B4009CF9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B2B6C7222654B4009CF9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA45B91F0A6FD5FBAC9DB83 /* Pods-LearnSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZW85V7AG4;
+				INFOPLIST_FILE = LearnSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LearnSwift/LearnSwiftBridgeHeader.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B2B6C8222654B4009CF9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717DF0E06A5D8F1DE3A5A4F0 /* Pods-LearnSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZW85V7AG4;
+				INFOPLIST_FILE = LearnSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LearnSwift/LearnSwiftBridgeHeader.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B2B6CA222654B4009CF9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF194A1BB2682E3AECB7DF3 /* Pods-LearnSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZW85V7AG4;
+				INFOPLIST_FILE = LearnSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnSwift.app/LearnSwift";
+			};
+			name = Debug;
+		};
+		18B2B6CB222654B4009CF9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB58104BFB4407171E107D83 /* Pods-LearnSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZW85V7AG4;
+				INFOPLIST_FILE = LearnSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnSwift.app/LearnSwift";
+			};
+			name = Release;
+		};
+		18B2B6CD222654B4009CF9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843DE79157BCBD259307775D /* Pods-LearnSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZW85V7AG4;
+				INFOPLIST_FILE = LearnSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnSwift;
+			};
+			name = Debug;
+		};
+		18B2B6CE222654B4009CF9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A6778726E0CC0E1F8CFF4B /* Pods-LearnSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZW85V7AG4;
+				INFOPLIST_FILE = LearnSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearnSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B2B699222654B3009CF9C9 /* Build configuration list for PBXProject "LearnSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2B6C4222654B4009CF9C9 /* Debug */,
+				18B2B6C5222654B4009CF9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2B6C6222654B4009CF9C9 /* Build configuration list for PBXNativeTarget "LearnSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2B6C7222654B4009CF9C9 /* Debug */,
+				18B2B6C8222654B4009CF9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2B6C9222654B4009CF9C9 /* Build configuration list for PBXNativeTarget "LearnSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2B6CA222654B4009CF9C9 /* Debug */,
+				18B2B6CB222654B4009CF9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2B6CC222654B4009CF9C9 /* Build configuration list for PBXNativeTarget "LearnSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2B6CD222654B4009CF9C9 /* Debug */,
+				18B2B6CE222654B4009CF9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B2B696222654B3009CF9C9 /* Project object */;
+}
