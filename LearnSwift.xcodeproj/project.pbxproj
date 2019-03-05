@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181643ED222E5B1700EB004C /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643EC222E5B1700EB004C /* UIButton+Extention.swift */; };
+		181643F4222E635E00EB004C /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643EF222E635E00EB004C /* AlbumListCell.swift */; };
+		181643F5222E635E00EB004C /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643F0222E635E00EB004C /* AlbumListViewController.swift */; };
+		181643F6222E635E00EB004C /* DetailBrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643F1222E635E00EB004C /* DetailBrowseViewController.swift */; };
+		181643F7222E635E00EB004C /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643F2222E635E00EB004C /* ImagePickerManager.swift */; };
+		181643F8222E635E00EB004C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643F3222E635E00EB004C /* ImagePickerViewController.swift */; };
+		181643FD222E660A00EB004C /* PictureSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643FB222E660A00EB004C /* PictureSelectVC.swift */; };
+		181643FE222E660A00EB004C /* UtilityClassesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643FC222E660A00EB004C /* UtilityClassesVC.swift */; };
+		18164400222E677500EB004C /* PhotoBrowseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643FF222E677500EB004C /* PhotoBrowseVC.swift */; };
+		18164404222E6EC300EB004C /* RYQImageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18164402222E6EC300EB004C /* RYQImageViewVC.swift */; };
+		18164405222E6EC300EB004C /* RYQPhotoColletionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18164403222E6EC300EB004C /* RYQPhotoColletionCell.swift */; };
+		1816440A222E6EFB00EB004C /* UIImageView+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18164407222E6EFB00EB004C /* UIImageView+Category.swift */; };
+		1816440B222E6EFB00EB004C /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18164409222E6EFB00EB004C /* UIView+Extention.swift */; };
+		1816440D222E720400EB004C /* MyCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816440C222E720400EB004C /* MyCollectionViewVC.swift */; };
 		18B2B6A2222654B3009CF9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */; };
 		18B2B6A4222654B3009CF9C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6A3222654B3009CF9C9 /* ViewController.swift */; };
 		18B2B6A7222654B3009CF9C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B2B6A5222654B3009CF9C9 /* Main.storyboard */; };
@@ -78,6 +92,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181643EC222E5B1700EB004C /* UIButton+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		181643EF222E635E00EB004C /* AlbumListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListCell.swift; sourceTree = "<group>"; };
+		181643F0222E635E00EB004C /* AlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
+		181643F1222E635E00EB004C /* DetailBrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBrowseViewController.swift; sourceTree = "<group>"; };
+		181643F2222E635E00EB004C /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		181643F3222E635E00EB004C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		181643FB222E660A00EB004C /* PictureSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureSelectVC.swift; sourceTree = "<group>"; };
+		181643FC222E660A00EB004C /* UtilityClassesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityClassesVC.swift; sourceTree = "<group>"; };
+		181643FF222E677500EB004C /* PhotoBrowseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowseVC.swift; sourceTree = "<group>"; };
+		18164402222E6EC300EB004C /* RYQImageViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYQImageViewVC.swift; sourceTree = "<group>"; };
+		18164403222E6EC300EB004C /* RYQPhotoColletionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYQPhotoColletionCell.swift; sourceTree = "<group>"; };
+		18164407222E6EFB00EB004C /* UIImageView+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Category.swift"; sourceTree = "<group>"; };
+		18164409222E6EFB00EB004C /* UIView+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		1816440C222E720400EB004C /* MyCollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewVC.swift; sourceTree = "<group>"; };
 		18B2B69E222654B3009CF9C9 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B2B6A3222654B3009CF9C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +201,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181643E2222E58DD00EB004C /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				181643F9222E660A00EB004C /* 大图浏览 */,
+				181643FA222E660A00EB004C /* 图片选择 */,
+			);
+			path = "工具类";
+			sourceTree = "<group>";
+		};
+		181643EA222E5B0200EB004C /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				18164406222E6EFB00EB004C /* UIImageView */,
+				18164408222E6EFB00EB004C /* UIView */,
+				181643EB222E5B0200EB004C /* UIButton */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		181643EB222E5B0200EB004C /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				181643EC222E5B1700EB004C /* UIButton+Extention.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		181643EE222E635E00EB004C /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				181643EF222E635E00EB004C /* AlbumListCell.swift */,
+				181643F0222E635E00EB004C /* AlbumListViewController.swift */,
+				181643F1222E635E00EB004C /* DetailBrowseViewController.swift */,
+				181643F2222E635E00EB004C /* ImagePickerManager.swift */,
+				181643F3222E635E00EB004C /* ImagePickerViewController.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		181643F9222E660A00EB004C /* 大图浏览 */ = {
+			isa = PBXGroup;
+			children = (
+				181643FF222E677500EB004C /* PhotoBrowseVC.swift */,
+			);
+			path = "大图浏览";
+			sourceTree = "<group>";
+		};
+		181643FA222E660A00EB004C /* 图片选择 */ = {
+			isa = PBXGroup;
+			children = (
+				181643FB222E660A00EB004C /* PictureSelectVC.swift */,
+				181643FC222E660A00EB004C /* UtilityClassesVC.swift */,
+			);
+			path = "图片选择";
+			sourceTree = "<group>";
+		};
+		18164401222E6EC300EB004C /* RYQImageViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				1816440C222E720400EB004C /* MyCollectionViewVC.swift */,
+				18164402222E6EC300EB004C /* RYQImageViewVC.swift */,
+				18164403222E6EC300EB004C /* RYQPhotoColletionCell.swift */,
+			);
+			path = RYQImageViewVC;
+			sourceTree = "<group>";
+		};
+		18164406222E6EFB00EB004C /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				18164407222E6EFB00EB004C /* UIImageView+Category.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		18164408222E6EFB00EB004C /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				18164409222E6EFB00EB004C /* UIView+Extention.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		18B2B695222654B3009CF9C9 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +344,7 @@
 		18B2B73822266079009CF9C9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				181643E2222E58DD00EB004C /* 工具类 */,
 				18B2B73922266079009CF9C9 /* 多线程 */,
 				18B2B73D22266079009CF9C9 /* 数据结构 */,
 				18B2B74422266079009CF9C9 /* 算法排序 */,
@@ -375,6 +486,9 @@
 		18B2B78E22266097009CF9C9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18164401222E6EC300EB004C /* RYQImageViewVC */,
+				181643EE222E635E00EB004C /* ImagePicker */,
+				181643EA222E5B0200EB004C /* Extentions */,
 				18B2B78F222660AC009CF9C9 /* NetWorkTools */,
 			);
 			path = Tools;
@@ -570,11 +684,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -625,19 +743,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B2B78422266079009CF9C9 /* MacroDefinition.swift in Sources */,
+				181643F7222E635E00EB004C /* ImagePickerManager.swift in Sources */,
 				18B2B73322265502009CF9C9 /* BaseViewController.swift in Sources */,
+				1816440B222E6EFB00EB004C /* UIView+Extention.swift in Sources */,
+				18164405222E6EC300EB004C /* RYQPhotoColletionCell.swift in Sources */,
+				181643F8222E635E00EB004C /* ImagePickerViewController.swift in Sources */,
 				18B2B77F22266079009CF9C9 /* TextLayerVC.swift in Sources */,
 				18B2B76E22266079009CF9C9 /* ArrayVC.swift in Sources */,
+				181643F5222E635E00EB004C /* AlbumListViewController.swift in Sources */,
 				18B2B78822266079009CF9C9 /* PaintLineViewVC.swift in Sources */,
 				18B2B78B22266079009CF9C9 /* PaintTrajectoryViewVC.swift in Sources */,
 				18B2B78622266079009CF9C9 /* PaintDottedLineVC.swift in Sources */,
 				18B2B6A4222654B3009CF9C9 /* ViewController.swift in Sources */,
 				18B2B77A22266079009CF9C9 /* IrregularGradientVC.swift in Sources */,
 				18B2B77922266079009CF9C9 /* HistogramVC.swift in Sources */,
+				181643FD222E660A00EB004C /* PictureSelectVC.swift in Sources */,
+				181643ED222E5B1700EB004C /* UIButton+Extention.swift in Sources */,
 				18B2B76A22266079009CF9C9 /* GCDVC.swift in Sources */,
 				18B2B77722266079009CF9C9 /* SortAlgorithmVC.swift in Sources */,
 				18B2B795222661E4009CF9C9 /* API.swift in Sources */,
 				18B2B6A2222654B3009CF9C9 /* AppDelegate.swift in Sources */,
+				1816440D222E720400EB004C /* MyCollectionViewVC.swift in Sources */,
 				18B2B77E22266079009CF9C9 /* SpiderWebVC.swift in Sources */,
 				18B2B78A22266079009CF9C9 /* PaintShadowView.swift in Sources */,
 				18B2B793222660B8009CF9C9 /* SXYNetWork.swift in Sources */,
@@ -648,11 +774,15 @@
 				18B2B78522266079009CF9C9 /* PaintCilcleViewVC.swift in Sources */,
 				18B2B77D22266079009CF9C9 /* QuadRaticBezierVC.swift in Sources */,
 				18B2B76F22266079009CF9C9 /* RYQArray.m in Sources */,
+				18164404222E6EC300EB004C /* RYQImageViewVC.swift in Sources */,
 				18B2B78922266079009CF9C9 /* PaintRoundedRectangleVC.swift in Sources */,
 				18B2B77022266079009CF9C9 /* BubbleSortVC.swift in Sources */,
 				18B2B78222266079009CF9C9 /* PieChartView.swift in Sources */,
+				1816440A222E6EFB00EB004C /* UIImageView+Category.swift in Sources */,
+				181643F6222E635E00EB004C /* DetailBrowseViewController.swift in Sources */,
 				18B2B76B22266079009CF9C9 /* MultiThreadVC.swift in Sources */,
 				18B2B77822266079009CF9C9 /* CalculationVC.swift in Sources */,
+				181643F4222E635E00EB004C /* AlbumListCell.swift in Sources */,
 				18B2B77522266079009CF9C9 /* QuickSortVC.swift in Sources */,
 				18B2B77B22266079009CF9C9 /* LayerAnimationVC.swift in Sources */,
 				18B2B792222660B8009CF9C9 /* NetWorkHelper.swift in Sources */,
@@ -660,10 +790,12 @@
 				18B2B78122266079009CF9C9 /* PaintLineCapView.swift in Sources */,
 				18B2B73222265502009CF9C9 /* RYQTableViewVC.swift in Sources */,
 				18B2B78C22266079009CF9C9 /* PaintTriangleViewVC.swift in Sources */,
+				18164400222E677500EB004C /* PhotoBrowseVC.swift in Sources */,
 				18B2B78022266079009CF9C9 /* TripleBezierVC.swift in Sources */,
 				18B2B77422266079009CF9C9 /* MergeSortVC.swift in Sources */,
 				18B2B77322266079009CF9C9 /* InsertionSortVC.swift in Sources */,
 				18B2B77622266079009CF9C9 /* SelectionSortVC.swift in Sources */,
+				181643FE222E660A00EB004C /* UtilityClassesVC.swift in Sources */,
 				18B2B77C22266079009CF9C9 /* PieChartVC.swift in Sources */,
 				18B2B78722266079009CF9C9 /* PaintLineCapVC.swift in Sources */,
 				18B2B77222266079009CF9C9 /* HillSortVC.swift in Sources */,

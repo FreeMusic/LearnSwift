@@ -8,6 +8,8 @@ target 'LearnSwift' do
   # Pods for LearnSwift
   pod 'Alamofire'
   pod 'HandyJSON', '4.1.3'
+  pod 'SnapKit'
+  pod 'Kingfisher', '~>3.9.1'
 
   target 'LearnSwiftTests' do
     inherit! :search_paths
