@@ -81,9 +81,7 @@ class RYQPhotoColletionCell: UICollectionViewCell, UIScrollViewDelegate {
     }
     
     func loadImageURL(url:String) {
-        self.imageView.kf.setImage(with: ImageResource(downloadURL: URL.init(string: url)!), placeholder: UIImage.init(named: "BedDetailsPlaceHolder"), options: nil, progressBlock: nil) { (image, error, type, url) in
-            
-        }
+        self.imageView.setImageWithHolder(imageName: url, holder: "BedDetailsPlaceHolder")
     }
 }
 
