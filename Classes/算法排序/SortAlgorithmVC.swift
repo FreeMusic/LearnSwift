@@ -22,6 +22,7 @@ class SortAlgorithmVC: RYQTableViewVC {
             ArithmeticMessage.init(title: "选择排序", class: SelectionSortVC.self),
             ArithmeticMessage.init(title: "归并排序", class: MergeSortVC.self),
             ArithmeticMessage.init(title: "堆排序", class: HeapSortVC.self),
+            ArithmeticMessage.init(title: "递归算法", class: RecursiveVC.self),
         ]
     }
 

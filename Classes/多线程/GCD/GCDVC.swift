@@ -77,6 +77,6 @@ extension GCDVC {
      添加阻碍 Barrier GCD里的Barrier和NSOperationQueue的dependency比较接近，C任务开始之前需要A任务完成，或者A和B任务完成。
      */
     func dispatchGroupManngerAddBarrier() {
-
+        
     }
 }

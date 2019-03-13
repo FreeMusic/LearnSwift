@@ -21,6 +21,7 @@
 		1816440A222E6EFB00EB004C /* UIImageView+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18164407222E6EFB00EB004C /* UIImageView+Category.swift */; };
 		1816440B222E6EFB00EB004C /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18164409222E6EFB00EB004C /* UIView+Extention.swift */; };
 		1816440D222E720400EB004C /* MyCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816440C222E720400EB004C /* MyCollectionViewVC.swift */; };
+		181F31E02230FB6C0098E099 /* RecursiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F31DF2230FB6C0098E099 /* RecursiveVC.swift */; };
 		18B2B6A2222654B3009CF9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */; };
 		18B2B6A4222654B3009CF9C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B6A3222654B3009CF9C9 /* ViewController.swift */; };
 		18B2B6A7222654B3009CF9C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B2B6A5222654B3009CF9C9 /* Main.storyboard */; };
@@ -106,6 +107,7 @@
 		18164407222E6EFB00EB004C /* UIImageView+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Category.swift"; sourceTree = "<group>"; };
 		18164409222E6EFB00EB004C /* UIView+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
 		1816440C222E720400EB004C /* MyCollectionViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewVC.swift; sourceTree = "<group>"; };
+		181F31DF2230FB6C0098E099 /* RecursiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveVC.swift; sourceTree = "<group>"; };
 		18B2B69E222654B3009CF9C9 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B2B6A3222654B3009CF9C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				18B2B74A22266079009CF9C9 /* QuickSortVC.swift */,
 				18B2B74B22266079009CF9C9 /* SelectionSortVC.swift */,
 				18B2B74C22266079009CF9C9 /* SortAlgorithmVC.swift */,
+				181F31DF2230FB6C0098E099 /* RecursiveVC.swift */,
 			);
 			path = "算法排序";
 			sourceTree = "<group>";
@@ -795,6 +798,7 @@
 				18B2B77422266079009CF9C9 /* MergeSortVC.swift in Sources */,
 				18B2B77322266079009CF9C9 /* InsertionSortVC.swift in Sources */,
 				18B2B77622266079009CF9C9 /* SelectionSortVC.swift in Sources */,
+				181F31E02230FB6C0098E099 /* RecursiveVC.swift in Sources */,
 				181643FE222E660A00EB004C /* UtilityClassesVC.swift in Sources */,
 				18B2B77C22266079009CF9C9 /* PieChartVC.swift in Sources */,
 				18B2B78722266079009CF9C9 /* PaintLineCapVC.swift in Sources */,
