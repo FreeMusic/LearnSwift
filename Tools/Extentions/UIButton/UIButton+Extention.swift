@@ -100,7 +100,7 @@ extension UIButton {
     /**
      文字按钮的创建
      */
-    class func initButton(title:String, radius:CGFloat,color:RYQButtonBackColor, addView:UIView, action:buttonAction) -> UIButton {
+    class func initButton(title:String, radius:CGFloat,color:RYQButtonBackColor, addView:UIView, action:@escaping buttonAction) -> UIButton {
         let button = UIButton()
         button.color = color
         button.setTitle(title, for: UIControlState.normal)
@@ -109,7 +109,8 @@ extension UIButton {
         button.adjustsImageWhenHighlighted = false
         addView.addSubview(button)
         
-        objc_setAssociatedObject(button, &actionKey, action, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
+//        objc_setAssociatedObject(button, &actionKey, action, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
+        objc_setAssociatedObject(button as Any, &actionKey, action as? Any, .OBJC_ASSOCIATION_COPY)
         button.addTarget(button, action: #selector(buttonClick(sender:)), for: UIControlEvents.touchUpInside)
         
         return button
@@ -117,13 +118,13 @@ extension UIButton {
     /**
      图片按钮的创建
      */
-    class func initImageButton(imageName:String, addView:UIView, action:buttonAction) -> UIButton {
+    class func initImageButton(imageName:String, addView:UIView, action:@escaping buttonAction) -> UIButton {
         let button = UIButton()
         button.setImage(UIImage.init(named: imageName), for: UIControlState.normal)
         button.adjustsImageWhenHighlighted = false
         addView.addSubview(button)
         
-        objc_setAssociatedObject(button, &actionKey, action, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
+        objc_setAssociatedObject(button as Any, &actionKey, action as? Any, .OBJC_ASSOCIATION_COPY)
         button.addTarget(button, action: #selector(buttonClick(sender:)), for: UIControlEvents.touchUpInside)
         
         return button
@@ -132,7 +133,7 @@ extension UIButton {
     /**
      左图片右文字的按钮
      */
-    class func initTextAndImageButton(imageName:String, title:String, font:UIFont, action:buttonAction) -> UIButton{
+    class func initTextAndImageButton(imageName:String, title:String, font:UIFont, action:@escaping buttonAction) -> UIButton{
         
         let button = UIButton.init()
         button.setImage(UIImage.init(named: imageName), for: UIControlState.normal)
@@ -141,7 +142,7 @@ extension UIButton {
         button.setTitleColor(white, for: UIControlState.normal)
         button.titleLabel?.font = font
         
-        objc_setAssociatedObject(button, &actionKey, action, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
+        objc_setAssociatedObject(button as Any, &actionKey, action as? Any, .OBJC_ASSOCIATION_COPY)
         button.addTarget(button, action: #selector(buttonClick(sender:)), for: UIControlEvents.touchUpInside)
         
         return button
@@ -149,14 +150,14 @@ extension UIButton {
     /**
      文字按钮 无背景颜色
      */
-    class func buttonWithText(title:String, color:UIColor, font:UIFont, action:buttonAction) -> UIButton {
+    class func buttonWithText(title:String, color:UIColor, font:UIFont, action:@escaping buttonAction) -> UIButton {
         let button = UIButton.init()
         
         button.setTitle(title, for: UIControlState.normal)
         button.setTitleColor(color, for: UIControlState.normal)
         button.titleLabel?.font = font
         
-        objc_setAssociatedObject(button, &actionKey, action, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
+        objc_setAssociatedObject(button as Any, &actionKey, action as? Any, .OBJC_ASSOCIATION_COPY)
         button.addTarget(button, action: #selector(buttonClick(sender:)), for: UIControlEvents.touchUpInside)
         
         return button

@@ -31,6 +31,7 @@ class NetWorkHelper: NSObject {
     func loginRequest(success:@escaping successHandler, fail:@escaping failHandler) {
         SXYNetWork.work.PostRequest(url: UserLogin, paramters: nil) { (data) in
             let aResult = Result(model: (Any).self, list: [], success:data.success!)
+            RYQLog(aResult)
             self.resultCallBack(success: success, faile: fail, error: data.error, aResult: aResult)
         }
     }

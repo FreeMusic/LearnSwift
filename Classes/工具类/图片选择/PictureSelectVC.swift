@@ -16,7 +16,7 @@ class PictureSelectVC: BaseViewController {
         let button = UIButton.initButton(title: "选择图片", radius: 10, color: .mainBackColor, addView: self.view) { (sender) in
             let albumList = AlbumListViewController()
             let nav = UINavigationController(rootViewController: albumList)
-            present(nav, animated: true)
+            self.present(nav, animated: true)
             
             albumList.commpleted = {[weak self] images in
                 

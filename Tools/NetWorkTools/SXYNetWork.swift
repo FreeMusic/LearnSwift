@@ -91,6 +91,8 @@ class SXYNetWork: NSObject {
                     }
                 }
                 
+                RYQLog(requestJson)
+                
                 let data = RequestData(success: requestSuccess,json:requestJson,error:response.result.error as Any,requestURL: requestURL)
                 
                 handler(data)
