@@ -70,6 +70,7 @@
 		18B2B792222660B8009CF9C9 /* NetWorkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B790222660B8009CF9C9 /* NetWorkHelper.swift */; };
 		18B2B793222660B8009CF9C9 /* SXYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B791222660B8009CF9C9 /* SXYNetWork.swift */; };
 		18B2B795222661E4009CF9C9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B794222661E4009CF9C9 /* API.swift */; };
+		18DC62A0225D869D0040A475 /* ILoveYY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC629F225D869D0040A475 /* ILoveYY.swift */; };
 		1F2AAFEB40635279242C0C39 /* Pods_LearnSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */; };
 		9AF8CF1033CFEECF0064F820 /* Pods_LearnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */; };
 		E212202AE8A35240E90CA339 /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF0F5DC31610A41EECBAB9 /* Pods_LearnSwiftTests.framework */; };
@@ -164,6 +165,7 @@
 		18B2B790222660B8009CF9C9 /* NetWorkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkHelper.swift; sourceTree = "<group>"; };
 		18B2B791222660B8009CF9C9 /* SXYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetWork.swift; sourceTree = "<group>"; };
 		18B2B794222661E4009CF9C9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		18DC629F225D869D0040A475 /* ILoveYY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoveYY.swift; sourceTree = "<group>"; };
 		49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		717DF0E06A5D8F1DE3A5A4F0 /* Pods-LearnSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		181643E2222E58DD00EB004C /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				18DC629E225D86800040A475 /* ILoveYY */,
 				181643F9222E660A00EB004C /* 大图浏览 */,
 				181643FA222E660A00EB004C /* 图片选择 */,
 			);
@@ -506,6 +509,14 @@
 			path = NetWorkTools;
 			sourceTree = "<group>";
 		};
+		18DC629E225D86800040A475 /* ILoveYY */ = {
+			isa = PBXGroup;
+			children = (
+				18DC629F225D869D0040A475 /* ILoveYY.swift */,
+			);
+			path = ILoveYY;
+			sourceTree = "<group>";
+		};
 		392B35855EAD215FD60AF9A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -785,6 +796,7 @@
 				181643F6222E635E00EB004C /* DetailBrowseViewController.swift in Sources */,
 				18B2B76B22266079009CF9C9 /* MultiThreadVC.swift in Sources */,
 				18B2B77822266079009CF9C9 /* CalculationVC.swift in Sources */,
+				18DC62A0225D869D0040A475 /* ILoveYY.swift in Sources */,
 				181643F4222E635E00EB004C /* AlbumListCell.swift in Sources */,
 				18B2B77522266079009CF9C9 /* QuickSortVC.swift in Sources */,
 				18B2B77B22266079009CF9C9 /* LayerAnimationVC.swift in Sources */,
