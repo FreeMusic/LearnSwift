@@ -71,6 +71,8 @@
 		18B2B793222660B8009CF9C9 /* SXYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B791222660B8009CF9C9 /* SXYNetWork.swift */; };
 		18B2B795222661E4009CF9C9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2B794222661E4009CF9C9 /* API.swift */; };
 		18DC62A0225D869D0040A475 /* ILoveYY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC629F225D869D0040A475 /* ILoveYY.swift */; };
+		18EBD93022B9E01E005A60B5 /* FlickerJRTTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBD92F22B9E01E005A60B5 /* FlickerJRTTVC.swift */; };
+		18EBD93322B9E0FB005A60B5 /* FlickerJRTTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBD93222B9E0FB005A60B5 /* FlickerJRTTView.swift */; };
 		1F2AAFEB40635279242C0C39 /* Pods_LearnSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */; };
 		9AF8CF1033CFEECF0064F820 /* Pods_LearnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */; };
 		E212202AE8A35240E90CA339 /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF0F5DC31610A41EECBAB9 /* Pods_LearnSwiftTests.framework */; };
@@ -166,6 +168,8 @@
 		18B2B791222660B8009CF9C9 /* SXYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXYNetWork.swift; sourceTree = "<group>"; };
 		18B2B794222661E4009CF9C9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		18DC629F225D869D0040A475 /* ILoveYY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoveYY.swift; sourceTree = "<group>"; };
+		18EBD92F22B9E01E005A60B5 /* FlickerJRTTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerJRTTVC.swift; sourceTree = "<group>"; };
+		18EBD93222B9E0FB005A60B5 /* FlickerJRTTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerJRTTView.swift; sourceTree = "<group>"; };
 		49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		717DF0E06A5D8F1DE3A5A4F0 /* Pods-LearnSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 		181643E2222E58DD00EB004C /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				18EBD93122B9E0EF005A60B5 /* FlickerJRTTView */,
 				18DC629E225D86800040A475 /* ILoveYY */,
 				181643F9222E660A00EB004C /* 大图浏览 */,
 				181643FA222E660A00EB004C /* 图片选择 */,
@@ -477,6 +482,7 @@
 				18B2B76522266079009CF9C9 /* PaintShadowView.swift */,
 				18B2B76622266079009CF9C9 /* PaintTrajectoryViewVC.swift */,
 				18B2B76722266079009CF9C9 /* PaintTriangleViewVC.swift */,
+				18EBD92F22B9E01E005A60B5 /* FlickerJRTTVC.swift */,
 			);
 			path = SimpleDraw;
 			sourceTree = "<group>";
@@ -515,6 +521,14 @@
 				18DC629F225D869D0040A475 /* ILoveYY.swift */,
 			);
 			path = ILoveYY;
+			sourceTree = "<group>";
+		};
+		18EBD93122B9E0EF005A60B5 /* FlickerJRTTView */ = {
+			isa = PBXGroup;
+			children = (
+				18EBD93222B9E0FB005A60B5 /* FlickerJRTTView.swift */,
+			);
+			path = FlickerJRTTView;
 			sourceTree = "<group>";
 		};
 		392B35855EAD215FD60AF9A2 /* Frameworks */ = {
@@ -778,6 +792,7 @@
 				18B2B795222661E4009CF9C9 /* API.swift in Sources */,
 				18B2B6A2222654B3009CF9C9 /* AppDelegate.swift in Sources */,
 				1816440D222E720400EB004C /* MyCollectionViewVC.swift in Sources */,
+				18EBD93322B9E0FB005A60B5 /* FlickerJRTTView.swift in Sources */,
 				18B2B77E22266079009CF9C9 /* SpiderWebVC.swift in Sources */,
 				18B2B78A22266079009CF9C9 /* PaintShadowView.swift in Sources */,
 				18B2B793222660B8009CF9C9 /* SXYNetWork.swift in Sources */,
@@ -807,6 +822,7 @@
 				18B2B78C22266079009CF9C9 /* PaintTriangleViewVC.swift in Sources */,
 				18164400222E677500EB004C /* PhotoBrowseVC.swift in Sources */,
 				18B2B78022266079009CF9C9 /* TripleBezierVC.swift in Sources */,
+				18EBD93022B9E01E005A60B5 /* FlickerJRTTVC.swift in Sources */,
 				18B2B77422266079009CF9C9 /* MergeSortVC.swift in Sources */,
 				18B2B77322266079009CF9C9 /* InsertionSortVC.swift in Sources */,
 				18B2B77622266079009CF9C9 /* SelectionSortVC.swift in Sources */,
