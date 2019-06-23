@@ -8,7 +8,7 @@
 
 import UIKit
 
-let distanceFuture = 21900
+let distanceFuture = 60
 var love = 1
 
 class ILoveYY: BaseViewController {
@@ -26,9 +26,8 @@ class ILoveYY: BaseViewController {
         while ourBegin < distanceFuture {
             
             ourBegin = ourBegin + 1
-            
-            love = love*2+ourBegin
-            
+
+            love = ourBegin*2
         }
         
     }

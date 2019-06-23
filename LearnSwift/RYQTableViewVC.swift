@@ -17,9 +17,11 @@ class RYQTableViewVC: BaseViewController, UITableViewDelegate, UITableViewDataSo
         super.viewDidLoad()
         
         tableView = UITableView.init(frame: CGRect.init(x: 0, y: NavigationBarHeight, width: kScreenWidth, height: kScreenHeight-NavigationBarHeight), style: UITableViewStyle.plain)
+        tableView?.tableFooterView = UIView()
         tableView?.delegate = self
         tableView?.dataSource = self
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        tableView?.tableFooterView = UIView.init()
         self.view.addSubview(tableView!)
     }
 

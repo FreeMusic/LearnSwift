@@ -30,7 +30,8 @@ class CurveDrawVC: RYQTableViewVC {
             ArithmeticMessage.init(title: "贝塞尔曲线计算", class: CalculationVC.self),
             ArithmeticMessage.init(title: "绘制虚线", class: PaintDottedLineVC.self),
             ArithmeticMessage.init(title: "绘制柱状图动画", class: HistogramVC.self),
-            ArithmeticMessage.init(title: "蜘蛛网状图", class: SpiderWebVC.self)
+            ArithmeticMessage.init(title: "蜘蛛网状图", class: SpiderWebVC.self),
+            ArithmeticMessage.init(title: "今日头条闪动加载", class: FlickerJRTTVC.self)
         ]
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
