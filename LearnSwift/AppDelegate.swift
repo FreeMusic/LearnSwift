@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,9 +20,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let naviVC = UINavigationController.init(rootViewController: ViewController())
         
         self.window?.rootViewController = naviVC
-        
+        //Realm的环境配置
+        AppDelegate.configureRealm()
         // Override point for customization after application launch.
         return true
+    }
+    
+    /// Realm的环境配置
+    public class func configureRealm() {
+        //如果要存储的数据模型属性发生变化，需要配置当前版本号比之前大
+        let realmVersion: UInt64 = 2
+        let docPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
+        let realmPath = docPath.appendingFormat("/MyRealmPath.realm")
+        let config = Realm.Configuration(fileURL: URL.init(string: realmPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: realmVersion, migrationBlock: { (migration, oldSchemaVersion) in
+            
+        }, deleteRealmIfMigrationNeeded: false, shouldCompactOnLaunch: nil, objectTypes: nil)
+        
+        Realm.Configuration.defaultConfiguration = config
+        Realm.asyncOpen { (realm, error) in
+            if let _ = realm{
+                RYQLog("Realm 服务器配置成功!")
+            }else if let error = error {
+                RYQLog("Realm 数据库配置失败：\(error.localizedDescription)")
+            }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

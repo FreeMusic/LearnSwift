@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180CF1D923040DDD0096C58B /* RealmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CF1D823040DDD0096C58B /* RealmVC.swift */; };
 		181643ED222E5B1700EB004C /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643EC222E5B1700EB004C /* UIButton+Extention.swift */; };
 		181643F4222E635E00EB004C /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643EF222E635E00EB004C /* AlbumListCell.swift */; };
 		181643F5222E635E00EB004C /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643F0222E635E00EB004C /* AlbumListViewController.swift */; };
@@ -96,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180CF1D823040DDD0096C58B /* RealmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmVC.swift; sourceTree = "<group>"; };
 		181643EC222E5B1700EB004C /* UIButton+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
 		181643EF222E635E00EB004C /* AlbumListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListCell.swift; sourceTree = "<group>"; };
 		181643F0222E635E00EB004C /* AlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
@@ -209,9 +211,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180CF1D32303FF9C0096C58B /* Realm数据存储 */ = {
+			isa = PBXGroup;
+			children = (
+				180CF1D823040DDD0096C58B /* RealmVC.swift */,
+			);
+			path = "Realm数据存储";
+			sourceTree = "<group>";
+		};
 		181643E2222E58DD00EB004C /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				180CF1D32303FF9C0096C58B /* Realm数据存储 */,
 				18EBD93122B9E0EF005A60B5 /* FlickerJRTTView */,
 				18DC629E225D86800040A475 /* ILoveYY */,
 				181643F9222E660A00EB004C /* 大图浏览 */,
@@ -713,6 +724,8 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -720,6 +733,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,6 +841,7 @@
 				18B2B77422266079009CF9C9 /* MergeSortVC.swift in Sources */,
 				18B2B77322266079009CF9C9 /* InsertionSortVC.swift in Sources */,
 				18B2B77622266079009CF9C9 /* SelectionSortVC.swift in Sources */,
+				180CF1D923040DDD0096C58B /* RealmVC.swift in Sources */,
 				181F31E02230FB6C0098E099 /* RecursiveVC.swift in Sources */,
 				181643FE222E660A00EB004C /* UtilityClassesVC.swift in Sources */,
 				18B2B77C22266079009CF9C9 /* PieChartVC.swift in Sources */,

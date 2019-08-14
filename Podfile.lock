@@ -2,12 +2,19 @@ PODS:
   - Alamofire (4.8.1)
   - HandyJSON (4.2.1)
   - Kingfisher (4.10.1)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - HandyJSON
   - Kingfisher
+  - Realm
+  - RealmSwift
   - SnapKit
 
 SPEC REPOS:
@@ -15,14 +22,18 @@ SPEC REPOS:
     - Alamofire
     - HandyJSON
     - Kingfisher
+    - Realm
+    - RealmSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: ca787dff81c079ea94160885f482d545c7bd1b6b
+PODFILE CHECKSUM: 0edc4ce133dafb78b0694769f52e5c2397d64b66
 
 COCOAPODS: 1.5.3
