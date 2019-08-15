@@ -30,9 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     public class func configureRealm() {
         //如果要存储的数据模型属性发生变化，需要配置当前版本号比之前大
         let realmVersion: UInt64 = 2
-        let docPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
-        let realmPath = docPath.appendingFormat("/MyRealmPath.realm")
-        let config = Realm.Configuration(fileURL: URL.init(string: realmPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: realmVersion, migrationBlock: { (migration, oldSchemaVersion) in
+        let config = Realm.Configuration(fileURL: URL.init(string: studentRealmPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: realmVersion, migrationBlock: { (migration, oldSchemaVersion) in
             
         }, deleteRealmIfMigrationNeeded: false, shouldCompactOnLaunch: nil, objectTypes: nil)
         

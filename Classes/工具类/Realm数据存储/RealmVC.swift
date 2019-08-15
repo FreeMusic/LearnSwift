@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RealmVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        
+        //插入数据
+//        insertOptions()
+        //查询数据
+        searchStudent()
     }
-
+    
 }
+
+
+
+
