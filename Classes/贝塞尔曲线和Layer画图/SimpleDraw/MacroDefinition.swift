@@ -40,3 +40,8 @@ var KSafeBarHeight:CGFloat! = (kStatusBarHeight > 20) ? 34.0 : 0
 
 ///按钮背景颜色的主色调
 var ButtonBackColor = UIColor.FromRGB(hexadecimal: "#04a777")
+
+let documentPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
+
+let studentRealmPath = documentPath.appendingFormat("/studentRealmPath")
+

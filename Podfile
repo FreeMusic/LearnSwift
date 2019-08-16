@@ -10,6 +10,8 @@ target 'LearnSwift' do
   pod 'HandyJSON'
   pod 'SnapKit'
   pod 'Kingfisher'
+  pod 'RealmSwift'
+  pod 'Realm'
 
   target 'LearnSwiftTests' do
     inherit! :search_paths
