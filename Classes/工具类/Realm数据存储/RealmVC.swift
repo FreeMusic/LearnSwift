@@ -13,10 +13,14 @@ class RealmVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //删除
+        self.delete()
         //插入数据
-//        insertOptions()
+        insertOptions()
         //查询数据
-        searchStudent()
+        self.searchStudent()
+        //更新数据
+        self.updateStudent()
     }
     
 }

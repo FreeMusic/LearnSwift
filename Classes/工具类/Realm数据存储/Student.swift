@@ -52,37 +52,118 @@ class Student: Object {
 /// 工具类
 class YQStudentRealmTool: Object {
     
-    private class func getRealm(path:UInt64) -> Realm {
+    private class func getRealm(path:Int) -> Realm {
         //传入路径会自动创建数据库
         let studentRealm = try! Realm(fileURL: URL.init(string: studentRealmPath.appendingFormat("%d.realm", path))!)
         
         return studentRealm
     }
     
-    public class func insertStudent(by student: Student,  path:UInt64) -> Void {
+    /// 插入单条
+    public class func insertStudent(by student: Student,  path:Int) -> Void {
         let studentRealm = self.getRealm(path: path)
         try! studentRealm.write {
             studentRealm.add(student)
         }
         RYQLog(studentRealm.configuration.fileURL!)
     }
-    public class func insertStudents(by students: [Student],  path:UInt64) -> Void {
+    
+    /// 插入多条
+    public class func insertStudents(by students: [Student],  path:Int) -> Void {
         let studentRealm = self.getRealm(path: path)
         try! studentRealm.write {
             studentRealm.add(students)
         }
         RYQLog(studentRealm.configuration.fileURL!)
     }
-    
-    public class func getStudents() -> Results<Student> {
-        let defaultRealm = self.getRealm(path: 5700)
+    /// 获取一个Student数组
+    public class func getStudents(from : Int) -> Results<Student> {
+        let defaultRealm = self.getRealm(path: from)
         
         return defaultRealm.objects(Student.self)
     }
     
-    public class func getStudents(from: Int) -> Student {
-        let defaultRealm = self.getRealm(path: 5700)
+    /// 获取一个Student对象
+    public class func getStudent(from: Int) -> Student {
+        let defaultRealm = self.getRealm(path: from)
         
         return defaultRealm.object(ofType: Student.self, forPrimaryKey: from)!
+    }
+    
+    /// 获取指定条件的student
+    public class func getStudentByTerm(term: String) -> Results<Student>
+    {
+        let defaultRealm = self.getRealm(path: 5700)
+        let predicate = NSPredicate(format: term)
+        let results = defaultRealm.objects(Student.self)
+        return  results.filter(predicate)
+    }
+    
+//    ///升序降序查询
+//    public class func ascendingDescendingQueries() {
+//        let defaultRealm = self.getRealm(path: 5700)
+//        //根据名字升序查询
+//        let ascending = defaultRealm.objects(Student.self).sorted(byKeyPath: "id")
+//        // 根据名字降序序查询
+//        let descending = defaultRealm.objects(Student.self).sorted(byKeyPath: "id", ascending: false)
+//    }
+    
+    /// 主键更新单个学生
+    ///
+    /// - Parameters:
+    ///   - student: 单个学生
+    ///   - id: 主键
+    public class func updateStudent(student: Student, id : Int)
+    {
+        let defaultRealm = self.getRealm(path: id)
+        try! defaultRealm.write {
+            defaultRealm.add(student, update: true)
+        }
+    }
+    
+    /// 主键更新多个学生
+    ///
+    /// - Parameters:
+    ///   - students: 多个学生
+    ///   - id: 主键
+    public class func updateStudent(students: [Student], id : Int)
+    {
+        let defaultRealm = self.getRealm(path: id)
+        try! defaultRealm.write {
+            defaultRealm.add(students, update: true)
+        }
+    }
+    
+    /// 更新所有同学的年龄
+    ///
+    /// - Parameters:
+    ///   - from: id
+    ///   - age: 年龄
+    public class func updateStudentAge(from: Int, age: Int)
+    {
+        let realm = self.getRealm(path: from)
+        
+        try! realm.write {
+            let students = realm.objects(Student.self)
+            students.setValue(age, forKey: "age")
+        }
+    }
+    
+    
+    /// 删除单个student
+    public class func deleteStudent(student:Student, id:Int)
+    {
+        let realm = self.getRealm(path: id)
+        try! realm.write {
+            realm.delete(student)
+        }
+    }
+    //删除 多个Student
+    public class func deleteStudents(students:Results<Student>, id:Int)
+    {
+        let realm = self.getRealm(path: id)
+        try! realm.write {
+            realm.delete(students)
+        }
     }
 }

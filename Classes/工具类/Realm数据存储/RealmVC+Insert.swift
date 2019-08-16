@@ -34,7 +34,7 @@ extension RealmVC {
         student.weight = 130
         student.address = "狗屎县屎壳郎乡拖拉机村"
         
-        YQStudentRealmTool.insertStudent(by: student, path: UInt64(student.id))
+        YQStudentRealmTool.insertStudent(by: student, path: student.id)
     }
     
     func testInsertStudentWithPhotoBook() {
@@ -61,7 +61,7 @@ extension RealmVC {
         student.books.append(bookShengmingbuxi);
         student.books.append(bookDianfuzhe);
         
-        YQStudentRealmTool.insertStudent(by: student, path: UInt64(student.id))
+        YQStudentRealmTool.insertStudent(by: student, path: student.id)
     }
     
     func testInsertManyStudent() {

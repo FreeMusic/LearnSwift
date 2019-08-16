@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806E577230654E200549C33 /* RealmVC+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806E576230654E200549C33 /* RealmVC+Update.swift */; };
+		1806E57923069B0900549C33 /* RealmVC+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806E57823069B0900549C33 /* RealmVC+Delete.swift */; };
 		180CF1D923040DDD0096C58B /* RealmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CF1D823040DDD0096C58B /* RealmVC.swift */; };
 		181643ED222E5B1700EB004C /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643EC222E5B1700EB004C /* UIButton+Extention.swift */; };
 		181643F4222E635E00EB004C /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181643EF222E635E00EB004C /* AlbumListCell.swift */; };
@@ -100,6 +102,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1806E576230654E200549C33 /* RealmVC+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmVC+Update.swift"; sourceTree = "<group>"; };
+		1806E57823069B0900549C33 /* RealmVC+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmVC+Delete.swift"; sourceTree = "<group>"; };
 		180CF1D823040DDD0096C58B /* RealmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmVC.swift; sourceTree = "<group>"; };
 		181643EC222E5B1700EB004C /* UIButton+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
 		181643EF222E635E00EB004C /* AlbumListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListCell.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				180CF1D823040DDD0096C58B /* RealmVC.swift */,
+				1806E57823069B0900549C33 /* RealmVC+Delete.swift */,
+				1806E576230654E200549C33 /* RealmVC+Update.swift */,
 				188D600023050B1E00324439 /* RealmVC+Search.swift */,
 				188D5FFE23050AA600324439 /* RealmVC+Insert.swift */,
 				188D5FFC23050A5D00324439 /* Student.swift */,
@@ -794,6 +800,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1806E57923069B0900549C33 /* RealmVC+Delete.swift in Sources */,
 				18B2B78422266079009CF9C9 /* MacroDefinition.swift in Sources */,
 				181643F7222E635E00EB004C /* ImagePickerManager.swift in Sources */,
 				18B2B73322265502009CF9C9 /* BaseViewController.swift in Sources */,
@@ -829,6 +836,7 @@
 				18B2B77D22266079009CF9C9 /* QuadRaticBezierVC.swift in Sources */,
 				18B2B76F22266079009CF9C9 /* RYQArray.m in Sources */,
 				18164404222E6EC300EB004C /* RYQImageViewVC.swift in Sources */,
+				1806E577230654E200549C33 /* RealmVC+Update.swift in Sources */,
 				18B2B78922266079009CF9C9 /* PaintRoundedRectangleVC.swift in Sources */,
 				18B2B77022266079009CF9C9 /* BubbleSortVC.swift in Sources */,
 				18B2B78222266079009CF9C9 /* PieChartView.swift in Sources */,

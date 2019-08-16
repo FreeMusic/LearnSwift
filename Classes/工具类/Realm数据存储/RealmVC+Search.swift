@@ -13,15 +13,17 @@ extension RealmVC {
     //所有查询
     func searchStudent() {
         //普通查询
-        self.normalSearch()
+        self.normalSearch(from: 5700)
         /// 主键查询
-        primaryKeySearch()
+        self.primaryKeySearch(from: 5700)
+        //条件查询
+        self.termKeySearch()
     }
     
     /// 普通查询
-    func normalSearch() {
+    func normalSearch(from: Int) {
         
-        let students = YQStudentRealmTool.getStudents()
+        let students = YQStudentRealmTool.getStudents(from: from)
         
         for stu in students {
             RYQLog(stu.name);
@@ -29,9 +31,20 @@ extension RealmVC {
     }
     
     /// 主键查询
-    func primaryKeySearch() {
-        let student = YQStudentRealmTool.getStudents(from: 5700)
+    func primaryKeySearch(from: Int) {
+        let student = YQStudentRealmTool.getStudent(from: from)
         RYQLog(student.name)
     }
     
+    /// 条件查询
+    func termKeySearch() {
+        let students = YQStudentRealmTool.getStudentByTerm(term: "name = '搓背壮汉--(5698号)'")
+        if students.count == 0 {
+            RYQLog("未查找到任何数据")
+            return
+        }
+        for stu in students {
+            RYQLog(stu.age+stu.id)
+        }
+    }
 }
