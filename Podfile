@@ -7,7 +7,7 @@ target 'LearnSwift' do
 
   # Pods for LearnSwift
   pod 'Alamofire'
-  pod 'HandyJSON'
+  pod 'HandyJSON', '5.0.0-beta'
   pod 'SnapKit'
   pod 'Kingfisher'
   pod 'RealmSwift'
