@@ -56,7 +56,7 @@ extension RealmVC {
         
         for i in 5689...5700 {
             let student = Student()
-            student.name = String.init(format: "电车痴汉--(%d号)", i)
+            student.name = String.init(format: "抠脚大汉--(%d号)", i)
             student.weight = 115+i-5689
             student.age = 20+i-5689
             student.id = i
