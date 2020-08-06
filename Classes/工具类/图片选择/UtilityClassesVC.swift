@@ -16,7 +16,6 @@ class UtilityClassesVC: RYQTableViewVC {
         self.ArithmeticMessages = [
             ArithmeticMessage.init(title: "图片选择", class: PictureSelectVC.self),
             ArithmeticMessage.init(title: "大图浏览", class: PhotoBrowseVC.self),
-            ArithmeticMessage.init(title: "I Love YY", class: ILoveYY.self),
             ArithmeticMessage.init(title: "Realm数据存储", class: RealmVC.self),
         ]
     }

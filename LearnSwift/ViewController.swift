@@ -19,6 +19,7 @@ class ViewController: RYQTableViewVC {
             ArithmeticMessage.init(title: "贝塞尔曲线和Layer画图", class: CurveDrawVC.self),
             ArithmeticMessage.init(title: "数据结构", class: DataStructureVC.self),
             ArithmeticMessage.init(title: "工具类", class: UtilityClassesVC.self),
+            ArithmeticMessage.init(title: "AI深度学习", class: XYAICreateMLVC.self),
         ]
     }
 

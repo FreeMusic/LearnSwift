@@ -32,6 +32,9 @@ class ImagePickerManager: NSObject {
         case .denied, .restricted:
             print("拒绝授权")
             finished(false)
+            
+        default: break
+            
         }
     }
     

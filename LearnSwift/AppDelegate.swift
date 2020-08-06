@@ -10,6 +10,7 @@ import UIKit
 import Realm
 import RealmSwift
 
+@available(iOS 11.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = naviVC
         //Realm的环境配置
-        AppDelegate.configureRealm()
+//        AppDelegate.configureRealm()
         // Override point for customization after application launch.
         return true
     }
