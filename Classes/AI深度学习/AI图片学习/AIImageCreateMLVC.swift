@@ -17,6 +17,7 @@ class AIImageCreateMLVC: RYQTableViewVC {
         if #available(iOS 11.0, *) {
             self.ArithmeticMessages = [
                 ArithmeticMessage.init(title: "图片对比", class: AnalysisImageModelVC.self),
+                ArithmeticMessage.init(title: "图像识别", class: GraphicDiscernModelVC.self),
             ]
         } else {
             

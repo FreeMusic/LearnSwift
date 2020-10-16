@@ -80,11 +80,14 @@
 		18EBD93322B9E0FB005A60B5 /* FlickerJRTTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBD93222B9E0FB005A60B5 /* FlickerJRTTView.swift */; };
 		1F2AAFEB40635279242C0C39 /* Pods_LearnSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */; };
 		9AF8CF1033CFEECF0064F820 /* Pods_LearnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */; };
+		B194C8FD253827D7005AE769 /* GraphicDiscernModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194C8FC253827D7005AE769 /* GraphicDiscernModelVC.swift */; };
+		B194C8FF25382818005AE769 /* GraphicDiscern.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B194C8FE25382818005AE769 /* GraphicDiscern.mlmodel */; };
 		B1EADA2724DBE83A00E6685F /* XYAICreateMLVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA2624DBE83A00E6685F /* XYAICreateMLVC.swift */; };
 		B1EADA2924DBE90400E6685F /* AIImageCreateMLVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA2824DBE90400E6685F /* AIImageCreateMLVC.swift */; };
 		B1EADA2C24DBEC5E00E6685F /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA2B24DBEC5E00E6685F /* MobileNet.mlmodel */; };
 		B1EADA2E24DBECA900E6685F /* AnalysisImageModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA2D24DBECA900E6685F /* AnalysisImageModelVC.swift */; };
 		B1EADA3124DBEE2B00E6685F /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA3024DBEE2B00E6685F /* UIImage+CVPixelBuffer.swift */; };
+		B1FC7044253833D800C50214 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC7043253833D800C50214 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		E212202AE8A35240E90CA339 /* Pods_LearnSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF0F5DC31610A41EECBAB9 /* Pods_LearnSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -127,7 +130,7 @@
 		188D5FFC23050A5D00324439 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		188D5FFE23050AA600324439 /* RealmVC+Insert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmVC+Insert.swift"; sourceTree = "<group>"; };
 		188D600023050B1E00324439 /* RealmVC+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmVC+Search.swift"; sourceTree = "<group>"; };
-		18B2B69E222654B3009CF9C9 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2B69E222654B3009CF9C9 /* SwiftMLAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMLAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B2B6A3222654B3009CF9C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18B2B6A6222654B3009CF9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -191,11 +194,14 @@
 		843DE79157BCBD259307775D /* Pods-LearnSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftUITests/Pods-LearnSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FF194A1BB2682E3AECB7DF3 /* Pods-LearnSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftTests/Pods-LearnSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92A6778726E0CC0E1F8CFF4B /* Pods-LearnSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftUITests/Pods-LearnSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B194C8FC253827D7005AE769 /* GraphicDiscernModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicDiscernModelVC.swift; sourceTree = "<group>"; };
+		B194C8FE25382818005AE769 /* GraphicDiscern.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GraphicDiscern.mlmodel; sourceTree = "<group>"; };
 		B1EADA2624DBE83A00E6685F /* XYAICreateMLVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYAICreateMLVC.swift; sourceTree = "<group>"; };
 		B1EADA2824DBE90400E6685F /* AIImageCreateMLVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageCreateMLVC.swift; sourceTree = "<group>"; };
 		B1EADA2B24DBEC5E00E6685F /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		B1EADA2D24DBECA900E6685F /* AnalysisImageModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisImageModelVC.swift; sourceTree = "<group>"; };
 		B1EADA3024DBEE2B00E6685F /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		B1FC7043253833D800C50214 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		DBA45B91F0A6FD5FBAC9DB83 /* Pods-LearnSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		EB58104BFB4407171E107D83 /* Pods-LearnSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftTests/Pods-LearnSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0FF0F5DC31610A41EECBAB9 /* Pods_LearnSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -344,7 +350,7 @@
 		18B2B69F222654B3009CF9C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18B2B69E222654B3009CF9C9 /* LearnSwift.app */,
+				18B2B69E222654B3009CF9C9 /* SwiftMLAI.app */,
 				18B2B6B2222654B4009CF9C9 /* LearnSwiftTests.xctest */,
 				18B2B6BD222654B4009CF9C9 /* LearnSwiftUITests.xctest */,
 			);
@@ -568,6 +574,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B194C8FB25382754005AE769 /* GraphicDiscern */ = {
+			isa = PBXGroup;
+			children = (
+				B194C8FE25382818005AE769 /* GraphicDiscern.mlmodel */,
+				B194C8FC253827D7005AE769 /* GraphicDiscernModelVC.swift */,
+				B1FC7043253833D800C50214 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+			);
+			path = GraphicDiscern;
+			sourceTree = "<group>";
+		};
 		B1EADA2424DBE7D200E6685F /* AI深度学习 */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +596,7 @@
 		B1EADA2524DBE7D200E6685F /* AI图片学习 */ = {
 			isa = PBXGroup;
 			children = (
+				B194C8FB25382754005AE769 /* GraphicDiscern */,
 				B1EADA2A24DBEC4800E6685F /* ImageMLModel */,
 				B1EADA2824DBE90400E6685F /* AIImageCreateMLVC.swift */,
 				B1EADA2D24DBECA900E6685F /* AnalysisImageModelVC.swift */,
@@ -635,7 +652,7 @@
 			);
 			name = LearnSwift;
 			productName = LearnSwift;
-			productReference = 18B2B69E222654B3009CF9C9 /* LearnSwift.app */;
+			productReference = 18B2B69E222654B3009CF9C9 /* SwiftMLAI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		18B2B6B1222654B4009CF9C9 /* LearnSwiftTests */ = {
@@ -858,6 +875,7 @@
 				18B2B76A22266079009CF9C9 /* GCDVC.swift in Sources */,
 				18B2B77722266079009CF9C9 /* SortAlgorithmVC.swift in Sources */,
 				18B2B795222661E4009CF9C9 /* API.swift in Sources */,
+				B194C8FD253827D7005AE769 /* GraphicDiscernModelVC.swift in Sources */,
 				18B2B6A2222654B3009CF9C9 /* AppDelegate.swift in Sources */,
 				1816440D222E720400EB004C /* MyCollectionViewVC.swift in Sources */,
 				18EBD93322B9E0FB005A60B5 /* FlickerJRTTView.swift in Sources */,
@@ -875,6 +893,7 @@
 				18B2B77D22266079009CF9C9 /* QuadRaticBezierVC.swift in Sources */,
 				18B2B76F22266079009CF9C9 /* RYQArray.m in Sources */,
 				18164404222E6EC300EB004C /* RYQImageViewVC.swift in Sources */,
+				B194C8FF25382818005AE769 /* GraphicDiscern.mlmodel in Sources */,
 				B1EADA2924DBE90400E6685F /* AIImageCreateMLVC.swift in Sources */,
 				1806E577230654E200549C33 /* RealmVC+Update.swift in Sources */,
 				18B2B78922266079009CF9C9 /* PaintRoundedRectangleVC.swift in Sources */,
@@ -892,6 +911,7 @@
 				18B2B76C22266079009CF9C9 /* BeautyGirls.swift in Sources */,
 				18B2B78122266079009CF9C9 /* PaintLineCapView.swift in Sources */,
 				18B2B73222265502009CF9C9 /* RYQTableViewVC.swift in Sources */,
+				B1FC7044253833D800C50214 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				18B2B78C22266079009CF9C9 /* PaintTriangleViewVC.swift in Sources */,
 				18164400222E677500EB004C /* PhotoBrowseVC.swift in Sources */,
 				B1EADA2C24DBEC5E00E6685F /* MobileNet.mlmodel in Sources */,
@@ -1084,13 +1104,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FWGGQF6Q9C;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftMLAI;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LearnSwift/LearnSwiftBridgeHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1106,13 +1126,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N6A56233DX;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuandukeji.LearnSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftMLAI;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LearnSwift/LearnSwiftBridgeHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
