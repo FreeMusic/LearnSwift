@@ -51,11 +51,11 @@ class BaiDuTranlationTool: NSObject {
 //            self.removeResultDuplicationPart(result: contentString)
             RYQLog(rateString)
             var num:Double? = Double(rateString)
-            num = num ?? 0*100
+            num = num ?? 0
             if num == 0.00 {
                 break;
             }
-            let resultString = model.dst.replacingOccurrences(of: rateString, with: String.init(format: "%.2f%@的可能性为", num!, "%"))
+            let resultString = model.dst.replacingOccurrences(of: rateString, with: String.init(format: "%.2f%@的可能性为", num!*100, "%"))
             result = result + "\n" + resultString
         }
         self.translationHandler(result)
