@@ -15,6 +15,8 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
     
     var imageView:UIImageView!
     var discernResultLabel:UILabel!
+    var subView:UIView!
+    
     
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
@@ -36,23 +38,38 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
         let rightButtonItem = UIBarButtonItem.init(title: "获取图像", style: UIBarButtonItemStyle.plain, target: self, action: #selector(getDiscernGraphic))
         self.navigationItem.rightBarButtonItem = rightButtonItem
         
+        //图片
         imageView = UIImageView.init(frame: self.view.bounds)
         imageView.contentMode = UIViewContentMode.scaleAspectFit
         self.view.addSubview(imageView)
         
+        //结果父视图
+        subView = UIView.init()
+        subView.backgroundColor = UIColor.yellow.withAlphaComponent(0.8)
+        subView.layer.cornerRadius = 4;
+        subView.layer.masksToBounds = true
+        self.view.addSubview(subView)
+        
+        
+        
+        //验证结果
         discernResultLabel = UILabel.init()
         discernResultLabel.numberOfLines = 0
         discernResultLabel.text = "图像识别结果"
-        discernResultLabel.layer.cornerRadius = 4;
         discernResultLabel.textColor = red
-        discernResultLabel.layer.masksToBounds = true
-        discernResultLabel.backgroundColor = UIColor.yellow.withAlphaComponent(0.8)
         
-        self.view.addSubview(discernResultLabel)
+        subView.addSubview(discernResultLabel)
         discernResultLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(10)
+            make.right.equalTo(-10)
+            make.bottom.equalTo(-10)
+        }
+        
+        subView.snp.makeConstraints { (make) in
             make.left.equalTo(20)
             make.right.equalTo(-20)
             make.bottom.equalTo(-KSafeBarHeight-20)
+            make.top.equalTo(self.discernResultLabel.snp_top).offset(-10)
         }
     }
     
@@ -116,11 +133,12 @@ extension GraphicDiscernModelVC {
             if classifications.isEmpty {
                 self.discernResultLabel.text = "没有识别到任何内容"
             }else{
-                let topClassifications = classifications.prefix(2)
+                let topClassifications = classifications.prefix(10)
                 let descriptions = topClassifications.map { (classification)  in
-                    return String(format: "(%.2f)%@", classification.confidence, classification.identifier)
+                    return String(format: "%f%@", classification.confidence, classification.identifier)
                 }
-                self.discernResultLabel.text = "识别图像结果：\n" + descriptions.joined(separator: "\n")
+                /// 识别结果翻译成中文
+                self.prepareResultTranslateToChinese(descriptions: descriptions)
             }
         }
     }
@@ -143,4 +161,17 @@ extension GraphicDiscernModelVC {
         }
     }
     
+    
+    /// 识别结果翻译成中文
+    func prepareResultTranslateToChinese(descriptions:[String]) {
+        
+        var transString = ""
+        for string in descriptions {
+            transString = transString + "\n" + string
+        }
+        
+        BaiDuTranlationTool.mannger.translateToChinese(transString: transString) { (result) in
+            self.discernResultLabel.text = "图像识别结果：\n" + result
+        }
+    }
 }

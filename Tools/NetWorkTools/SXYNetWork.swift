@@ -45,7 +45,7 @@ class SXYNetWork: NSObject {
             }
             
             //网络连接
-            manager.request(ServicerIPAddress+url, method: .get, parameters: param, encoding: URLEncoding.default, headers: nil).responseString { (response) in
+            manager.request(url, method: .get, parameters: param, encoding: URLEncoding.default, headers: nil).responseString { (response) in
                 
                 var requestJson:String?
                 let requestSuccess:Bool = false
