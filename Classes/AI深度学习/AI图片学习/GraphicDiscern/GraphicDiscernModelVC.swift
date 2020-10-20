@@ -16,7 +16,10 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
     var imageView:UIImageView!
     var discernResultLabel:UILabel!
     var subView:UIView!
+    var voiceTool:VoiceSetTool!
     
+    let voiceHeight = 500.00
+    let voiceModel = VoiceAdjustModel.init()
     
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
@@ -50,8 +53,6 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
         subView.layer.masksToBounds = true
         self.view.addSubview(subView)
         
-        
-        
         //验证结果
         discernResultLabel = UILabel.init()
         discernResultLabel.numberOfLines = 0
@@ -71,6 +72,39 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
             make.bottom.equalTo(-KSafeBarHeight-20)
             make.top.equalTo(self.discernResultLabel.snp_top).offset(-10)
         }
+        
+        let width = kScreenWidth/4
+        
+        //语音调节工具
+        let voiceButton = UIButton.initButton(title: "语音设置", radius: 20, color: RYQButtonBackColor.mainColor, addView: self.view) { (button) in
+            UIView.animate(withDuration: 0.3) {
+                self.voiceTool.frame = CGRect.init(x: 0, y: kScreenHeight-CGFloat(self.voiceHeight), width: kScreenWidth, height: CGFloat(self.voiceHeight))
+                self.voiceTool.setVoiceModel(model: self.voiceModel)
+            }
+        }
+        voiceButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        voiceButton.snp.makeConstraints { (make) in
+            make.top.equalTo(NavigationBarHeight)
+            make.left.equalTo(0)
+            make.height.equalTo(40)
+            make.width.equalTo(width)
+        }
+        //暂停播放  继续播放
+        let continuePlayButton = UIButton.initButton(title: "重新播放", radius: 20, color: RYQButtonBackColor.mainColor, addView: self.view) { (button) in
+            VoicePlayTool.mannger.startPlayVoice(model: self.voiceModel)
+        }
+        continuePlayButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        continuePlayButton.snp.makeConstraints { (make) in
+            make.top.equalTo(NavigationBarHeight)
+            make.left.equalTo(width)
+            make.height.equalTo(40)
+            make.width.equalTo(width)
+        }
+        
+        
+        //语音调节弹窗视图
+        self.voiceTool = VoiceSetTool.init(frame: CGRect.init(x: 0, y: kScreenHeight, width: kScreenWidth, height: CGFloat(voiceHeight)))
+        self.view.addSubview(self.voiceTool)
     }
     
     
@@ -171,7 +205,9 @@ extension GraphicDiscernModelVC {
         }
         
         BaiDuTranlationTool.mannger.translateToChinese(transString: transString) { (result) in
-            self.discernResultLabel.text = "图像识别结果：\n" + result
+            self.discernResultLabel.text = "图像识别结果：" + result
+            self.voiceModel.playContent = self.discernResultLabel.text!
+            VoicePlayTool.mannger.startPlayVoice(model: self.voiceModel)
         }
     }
 }

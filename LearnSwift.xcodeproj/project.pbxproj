@@ -80,9 +80,14 @@
 		18EBD93322B9E0FB005A60B5 /* FlickerJRTTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBD93222B9E0FB005A60B5 /* FlickerJRTTView.swift */; };
 		1F2AAFEB40635279242C0C39 /* Pods_LearnSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E0B6C6B26DB8CDCA124E30 /* Pods_LearnSwiftUITests.framework */; };
 		9AF8CF1033CFEECF0064F820 /* Pods_LearnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF2487C4FC907C0DCC84E14 /* Pods_LearnSwift.framework */; };
+		B12A7EA0253E8FE100DDBF87 /* VoiceSetTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A7E9F253E8FE100DDBF87 /* VoiceSetTool.swift */; };
 		B142B3352539B0B900E8A9C6 /* TranslateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B142B3342539B0B900E8A9C6 /* TranslateModel.swift */; };
 		B194C8FD253827D7005AE769 /* GraphicDiscernModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194C8FC253827D7005AE769 /* GraphicDiscernModelVC.swift */; };
 		B194C8FF25382818005AE769 /* GraphicDiscern.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B194C8FE25382818005AE769 /* GraphicDiscern.mlmodel */; };
+		B1B64328253EB39700796525 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B64327253EB39700796525 /* UIColor+Extention.swift */; };
+		B1B6432A253ECE7A00796525 /* VoicePlayTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B64329253ECE7A00796525 /* VoicePlayTool.swift */; };
+		B1B6432C253EE09300796525 /* XYCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6432B253EE09300796525 /* XYCollectionViewVC.swift */; };
+		B1B6432E253EE16F00796525 /* LanguageSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6432D253EE16F00796525 /* LanguageSelectVC.swift */; };
 		B1EADA2724DBE83A00E6685F /* XYAICreateMLVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA2624DBE83A00E6685F /* XYAICreateMLVC.swift */; };
 		B1EADA2924DBE90400E6685F /* AIImageCreateMLVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA2824DBE90400E6685F /* AIImageCreateMLVC.swift */; };
 		B1EADA2C24DBEC5E00E6685F /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B1EADA2B24DBEC5E00E6685F /* MobileNet.mlmodel */; };
@@ -196,9 +201,14 @@
 		843DE79157BCBD259307775D /* Pods-LearnSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftUITests/Pods-LearnSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FF194A1BB2682E3AECB7DF3 /* Pods-LearnSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftTests/Pods-LearnSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92A6778726E0CC0E1F8CFF4B /* Pods-LearnSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwiftUITests/Pods-LearnSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B12A7E9F253E8FE100DDBF87 /* VoiceSetTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSetTool.swift; sourceTree = "<group>"; };
 		B142B3342539B0B900E8A9C6 /* TranslateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateModel.swift; sourceTree = "<group>"; };
 		B194C8FC253827D7005AE769 /* GraphicDiscernModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicDiscernModelVC.swift; sourceTree = "<group>"; };
 		B194C8FE25382818005AE769 /* GraphicDiscern.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GraphicDiscern.mlmodel; sourceTree = "<group>"; };
+		B1B64327253EB39700796525 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		B1B64329253ECE7A00796525 /* VoicePlayTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicePlayTool.swift; sourceTree = "<group>"; };
+		B1B6432B253EE09300796525 /* XYCollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYCollectionViewVC.swift; sourceTree = "<group>"; };
+		B1B6432D253EE16F00796525 /* LanguageSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectVC.swift; sourceTree = "<group>"; };
 		B1EADA2624DBE83A00E6685F /* XYAICreateMLVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYAICreateMLVC.swift; sourceTree = "<group>"; };
 		B1EADA2824DBE90400E6685F /* AIImageCreateMLVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageCreateMLVC.swift; sourceTree = "<group>"; };
 		B1EADA2B24DBEC5E00E6685F /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
@@ -266,6 +276,7 @@
 		181643EA222E5B0200EB004C /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				B1B64326253EB36F00796525 /* UIColor */,
 				B1EADA2F24DBEDF200E6685F /* UIImage */,
 				18164406222E6EFB00EB004C /* UIImageView */,
 				18164408222E6EFB00EB004C /* UIView */,
@@ -365,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				18B2B73122265502009CF9C9 /* BaseViewController.swift */,
+				B1B6432B253EE09300796525 /* XYCollectionViewVC.swift */,
 				18B2B73022265502009CF9C9 /* RYQTableViewVC.swift */,
 				18B2B6A1222654B3009CF9C9 /* AppDelegate.swift */,
 				18B2B6A3222654B3009CF9C9 /* ViewController.swift */,
@@ -583,11 +595,22 @@
 			children = (
 				B194C8FE25382818005AE769 /* GraphicDiscern.mlmodel */,
 				B194C8FC253827D7005AE769 /* GraphicDiscernModelVC.swift */,
+				B1B6432D253EE16F00796525 /* LanguageSelectVC.swift */,
 				B1FC7043253833D800C50214 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				B1EF4074253D6CC000829D36 /* BaiDuTranlationTool.swift */,
+				B12A7E9F253E8FE100DDBF87 /* VoiceSetTool.swift */,
+				B1B64329253ECE7A00796525 /* VoicePlayTool.swift */,
 				B142B3342539B0B900E8A9C6 /* TranslateModel.swift */,
 			);
 			path = GraphicDiscern;
+			sourceTree = "<group>";
+		};
+		B1B64326253EB36F00796525 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				B1B64327253EB39700796525 /* UIColor+Extention.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		B1EADA2424DBE7D200E6685F /* AI深度学习 */ = {
@@ -859,6 +882,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B6432E253EE16F00796525 /* LanguageSelectVC.swift in Sources */,
 				1806E57923069B0900549C33 /* RealmVC+Delete.swift in Sources */,
 				18B2B78422266079009CF9C9 /* MacroDefinition.swift in Sources */,
 				181643F7222E635E00EB004C /* ImagePickerManager.swift in Sources */,
@@ -869,6 +893,7 @@
 				18B2B77F22266079009CF9C9 /* TextLayerVC.swift in Sources */,
 				18B2B76E22266079009CF9C9 /* ArrayVC.swift in Sources */,
 				181643F5222E635E00EB004C /* AlbumListViewController.swift in Sources */,
+				B12A7EA0253E8FE100DDBF87 /* VoiceSetTool.swift in Sources */,
 				18B2B78822266079009CF9C9 /* PaintLineViewVC.swift in Sources */,
 				18B2B78B22266079009CF9C9 /* PaintTrajectoryViewVC.swift in Sources */,
 				18B2B78622266079009CF9C9 /* PaintDottedLineVC.swift in Sources */,
@@ -894,18 +919,21 @@
 				B1EADA2E24DBECA900E6685F /* AnalysisImageModelVC.swift in Sources */,
 				18B2B78322266079009CF9C9 /* CurveDrawVC.swift in Sources */,
 				18B2B76D22266079009CF9C9 /* DataStructureVC.swift in Sources */,
+				B1B6432C253EE09300796525 /* XYCollectionViewVC.swift in Sources */,
 				B1EF4075253D6CC000829D36 /* BaiDuTranlationTool.swift in Sources */,
 				18B2B77122266079009CF9C9 /* HeapSortVC.swift in Sources */,
 				18B2B78522266079009CF9C9 /* PaintCilcleViewVC.swift in Sources */,
 				18B2B77D22266079009CF9C9 /* QuadRaticBezierVC.swift in Sources */,
 				18B2B76F22266079009CF9C9 /* RYQArray.m in Sources */,
 				18164404222E6EC300EB004C /* RYQImageViewVC.swift in Sources */,
+				B1B6432A253ECE7A00796525 /* VoicePlayTool.swift in Sources */,
 				B194C8FF25382818005AE769 /* GraphicDiscern.mlmodel in Sources */,
 				B1EADA2924DBE90400E6685F /* AIImageCreateMLVC.swift in Sources */,
 				1806E577230654E200549C33 /* RealmVC+Update.swift in Sources */,
 				18B2B78922266079009CF9C9 /* PaintRoundedRectangleVC.swift in Sources */,
 				18B2B77022266079009CF9C9 /* BubbleSortVC.swift in Sources */,
 				18B2B78222266079009CF9C9 /* PieChartView.swift in Sources */,
+				B1B64328253EB39700796525 /* UIColor+Extention.swift in Sources */,
 				1816440A222E6EFB00EB004C /* UIImageView+Category.swift in Sources */,
 				181643F6222E635E00EB004C /* DetailBrowseViewController.swift in Sources */,
 				18B2B76B22266079009CF9C9 /* MultiThreadVC.swift in Sources */,

@@ -46,9 +46,6 @@ class BaiDuTranlationTool: NSObject {
         var result = ""
         for model in product.trans_result {
             let rateString = model.dst.prefix(4)
-//            var contentString = model.dst.replacingOccurrences(of: rateString, with: "")
-//            /// 去除字符串中重复的部分
-//            self.removeResultDuplicationPart(result: contentString)
             RYQLog(rateString)
             var num:Double? = Double(rateString)
             num = num ?? 0
