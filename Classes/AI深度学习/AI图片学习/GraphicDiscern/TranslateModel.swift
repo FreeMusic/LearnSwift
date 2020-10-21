@@ -8,79 +8,7 @@
 
 import UIKit
 
-/** 语种
-"th-TH",
 
-"pt-BR",
-
-"sk-SK",
-
-"fr-CA",
-
-"ro-RO",
-
-"no-NO",
-
-"fi-FI",
-
-"pl-PL",
-
-"de-DE",
-
-"nl-NL",
-
-"id-ID",
-
-"tr-TR",
-
-"it-IT",
-
-"pt-PT",
-
-"fr-FR",
-
-"ru-RU",
-
-"es-MX",
-
-"zh-HK",中文(香港)粤语
-
-"sv-SE",
-
-"hu-HU",
-
-"zh-TW",中文(台湾)
-
-"es-ES",
-
-"zh-CN",中文(普通话)
-
-"nl-BE",
-
-"en-GB",英语(英国)
-
-"ar-SA",
-
-"ko-KR",
-
-"cs-CZ",
-
-"en-ZA",
-
-"en-AU",
-
-"da-DK",
-
-"en-US",英语(美国)
-
-"en-IE",
-
-"hi-IN",
-
-"el-GR",
-
-"ja-JP"
- **/
 /// 调节语音模型
 class VoiceAdjustModel:Codable {
     var pitchMultiplier = 1.00 //音调调节  调节范围 ：[0.5 - 2]  默认是：1

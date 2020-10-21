@@ -53,7 +53,7 @@ class XYCollectionViewVC: BaseViewController  , UICollectionViewDelegate, UIColl
         return 0
     }
     /**
-     设置item之间Y的间距
+     设置item之间X的间距
      */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0

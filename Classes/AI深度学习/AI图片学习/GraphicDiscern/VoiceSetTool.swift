@@ -82,7 +82,11 @@ class VoiceSetTool: UIView {
         languageButton = UIButton.initButton(title: "当前语言为：", radius: 20, color: RYQButtonBackColor.mainColor, addView: self, action: { (button) in
             //跳转至语言选择界面
             let languageVC = LanguageSelectVC.init()
-            
+            languageVC.handler = { (languageName:String, language:String) in
+                self.languageButton.setTitle("当前语言："+languageName, for: UIControlState.normal)
+                self.voiceModel.language = language
+                self.voiceModel.languageName = languageName
+            }
             self.ViewController().navigationController?.pushViewController(languageVC, animated: true)
         })
         languageButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
