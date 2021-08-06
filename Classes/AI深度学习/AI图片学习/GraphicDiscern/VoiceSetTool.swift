@@ -99,8 +99,6 @@ class VoiceSetTool: UIView {
         for index in self.rankArray {
             self.addTextLabelAndSlider(rankIndex: index)
         }
-        
-        
     }
     
     func addTextLabelAndSlider(rankIndex:Int) {
