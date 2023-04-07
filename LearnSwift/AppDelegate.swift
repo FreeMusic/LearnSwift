@@ -21,6 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let naviVC = UINavigationController.init(rootViewController: ViewController())
         
         self.window?.rootViewController = naviVC
+        let string = "hello!"
+        print(string)
+        let `class` = "Runoob"
+        let a = 1 + 2;
+        var optionalInteger: Int?
+        optionalInteger = 234;
+        print(optionalInteger as Any)
+        
         //Realm的环境配置
 //        AppDelegate.configureRealm()
         // Override point for customization after application launch.

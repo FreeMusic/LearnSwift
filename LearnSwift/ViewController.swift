@@ -21,6 +21,17 @@ class ViewController: RYQTableViewVC {
             ArithmeticMessage.init(title: "工具类", class: UtilityClassesVC.self),
             ArithmeticMessage.init(title: "AI深度学习", class: XYAICreateMLVC.self),
         ]
+        
+        greet(name: "Boy", day: "Today")
+        getGasPrices()
+    }
+    
+    func greet(name: String, day: String) -> String {
+        return "Hello"
+    }
+    
+    func getGasPrices() -> (Double, Double, Double) {
+        return (3.59, 3.69, 3.79)
     }
 
     override func didReceiveMemoryWarning() {
