@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let naviVC = UINavigationController.init(rootViewController: ViewController())
         
         self.window?.rootViewController = naviVC
@@ -28,6 +28,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var optionalInteger: Int?
         optionalInteger = 234;
         print(optionalInteger as Any)
+        
+        var myString:String!
+        myString = "Hello"
+        if myString != nil {
+            print(myString)
+        } else {
+            print("nil")
+        }
+        
         
         //Realm的环境配置
 //        AppDelegate.configureRealm()

@@ -17,7 +17,7 @@ class FlickerJRTTView: UIView {
         super.init(frame: frame)
         
         textImgView.image = UIImage.init(named: "MengHuanBackGroundText")
-        textImgView.contentMode = UIViewContentMode.scaleAspectFit
+        textImgView.contentMode = UIView.ContentMode.scaleAspectFit
         textImgView.frame = self.bounds
         self.addSubview(self.textImgView)
         

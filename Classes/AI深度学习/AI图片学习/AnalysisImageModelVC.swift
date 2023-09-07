@@ -24,7 +24,7 @@ class AnalysisImageModelVC: BaseViewController {
         let image = UIImage.init(named: "CoreMLAI_AnimalCat")
         
         imageView = UIImageView.init(image: image)
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
         self.view.addSubview(imageView)
         imageView.snp_makeConstraints { (make) in
             make.left.right.equalTo(0)
@@ -61,7 +61,7 @@ class AnalysisImageModelVC: BaseViewController {
         // This is just to test that the CVPixelBuffer conversion works OK.
         // It should have resized the image to a square 224x224 pixels.
         var imoog: CGImage?
-        VTCreateCGImageFromCVPixelBuffer(pixelBuffer, nil, &imoog)
+          VTCreateCGImageFromCVPixelBuffer(pixelBuffer, options: nil, imageOut: &imoog)
         imageView.image = UIImage(cgImage: imoog!)
       }
     }

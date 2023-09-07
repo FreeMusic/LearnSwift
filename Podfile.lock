@@ -18,7 +18,7 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - HandyJSON
     - Kingfisher
@@ -36,4 +36,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b7746e93236eab50a2b270baf4e9cb0104b6cb21
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.12.1

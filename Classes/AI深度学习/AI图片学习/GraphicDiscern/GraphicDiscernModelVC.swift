@@ -38,12 +38,12 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let rightButtonItem = UIBarButtonItem.init(title: "获取图像", style: UIBarButtonItemStyle.plain, target: self, action: #selector(getDiscernGraphic))
+        let rightButtonItem = UIBarButtonItem.init(title: "获取图像", style: UIBarButtonItem.Style.plain, target: self, action: #selector(getDiscernGraphic))
         self.navigationItem.rightBarButtonItem = rightButtonItem
         
         //图片
         imageView = UIImageView.init(frame: self.view.bounds)
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
         self.view.addSubview(imageView)
         
         //结果父视图
@@ -132,7 +132,7 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
         present(photoSourcePicker, animated: true, completion: nil)
     }
     
-    func presentPhotoPicker(sourceType:UIImagePickerControllerSourceType) {
+    func presentPhotoPicker(sourceType:UIImagePickerController.SourceType) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = sourceType
@@ -143,7 +143,7 @@ class GraphicDiscernModelVC: BaseViewController, UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         picker.dismiss(animated: true, completion: nil)
         
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as! UIImage
         imageView.image = image
         
         self.updateClassifications(for: image)

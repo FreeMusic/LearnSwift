@@ -23,7 +23,7 @@ class PaintDottedLineVC: BaseViewController {
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeColor = red.cgColor
         shapeLayer.lineWidth = 3
-        shapeLayer.lineJoin = kCALineJoinRound
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
         //
         shapeLayer.lineDashPattern = [3,4]
         let path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 5)

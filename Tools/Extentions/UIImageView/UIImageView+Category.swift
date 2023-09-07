@@ -59,7 +59,7 @@ extension UIImageView {
             //翻转图片的方向
             let flipImageOrientation = ((self.image?.imageOrientation.rawValue)! + 4) % 8
             //翻转图片
-            let flipImage = UIImage(cgImage: (self.image?.cgImage!)!, scale: (self.image?.scale)!, orientation: UIImageOrientation(rawValue: flipImageOrientation)!)
+            let flipImage = UIImage(cgImage: (self.image?.cgImage!)!, scale: (self.image?.scale)!, orientation: UIImage.Orientation(rawValue: flipImageOrientation)!)
             
             //图片显示
             self.image = flipImage

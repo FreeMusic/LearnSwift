@@ -36,7 +36,7 @@ class VoiceSetTool: UIView {
     func setVoiceModel(model:VoiceAdjustModel) {
         self.voiceModel = model
         numArray = [model.pitchMultiplier, model.volume, model.rate] as [Double]
-        self.languageButton.setTitle("当前语言："+model.languageName, for: UIControlState.normal)
+        self.languageButton.setTitle("当前语言："+model.languageName, for: UIControl.State.normal)
         for index in self.rankArray {
             let label = self.viewWithTag(ToolBasicTag+index) as! UILabel
             label.text = array[(index/2)-1] + String(numArray[(index/2)-1])
@@ -70,7 +70,7 @@ class VoiceSetTool: UIView {
             self.voiceModel.startPlayVoice = button.isSelected
             button.isSelected = !button.isSelected
         })
-        voicePlayButton.setTitle("语音播放关闭", for: UIControlState.selected)
+        voicePlayButton.setTitle("语音播放关闭", for: UIControl.State.normal)
         voicePlayButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         voicePlayButton.snp.makeConstraints { (make) in
             make.left.equalTo(20)
@@ -83,7 +83,7 @@ class VoiceSetTool: UIView {
             //跳转至语言选择界面
             let languageVC = LanguageSelectVC.init()
             languageVC.handler = { (languageName:String, language:String) in
-                self.languageButton.setTitle("当前语言："+languageName, for: UIControlState.normal)
+                self.languageButton.setTitle("当前语言："+languageName, for: UIControl.State.normal)
                 self.voiceModel.language = language
                 self.voiceModel.languageName = languageName
             }
@@ -120,7 +120,7 @@ class VoiceSetTool: UIView {
         pitchSlider.minimumValue = Float(minSliderValues[rankIndex/2-1])
         pitchSlider.tag = ToolBasicTag*2+rankIndex
         self.addSubview(pitchSlider)
-        pitchSlider.addTarget(self, action: #selector(sliderValueChanged(slider:)), for: UIControlEvents.valueChanged)
+        pitchSlider.addTarget(self, action: #selector(sliderValueChanged(slider:)), for: UIControl.Event.valueChanged)
         pitchSlider.snp.makeConstraints { (make) in
             make.left.equalTo(20)
             make.right.equalTo(-20)

@@ -16,7 +16,7 @@ class RYQTableViewVC: BaseViewController, UITableViewDelegate, UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView = UITableView.init(frame: CGRect.init(x: 0, y: NavigationBarHeight, width: kScreenWidth, height: kScreenHeight-NavigationBarHeight), style: UITableViewStyle.plain)
+        tableView = UITableView.init(frame: CGRect.init(x: 0, y: NavigationBarHeight, width: kScreenWidth, height: kScreenHeight-NavigationBarHeight), style: UITableView.Style.plain)
         tableView?.tableFooterView = UIView()
         tableView?.delegate = self
         tableView?.dataSource = self

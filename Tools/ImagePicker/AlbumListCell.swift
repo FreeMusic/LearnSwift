@@ -18,7 +18,7 @@ class AlbumListCell: UITableViewCell {
     fileprivate var numberLabel: UILabel!
     fileprivate var imageManager = PHCachingImageManager()
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         accessoryType = .disclosureIndicator
         setupUI()

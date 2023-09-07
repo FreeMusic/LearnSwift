@@ -44,7 +44,7 @@ extension RealmVC {
         student.age = 33
         student.id = 4578
         //头像
-        student.photo = (UIImagePNGRepresentation(UIImage.init(named: "MengHuanBackGroundText")!)! as NSData)
+        student.photo = (UIImage.init(named: "MengHuanBackGroundText")!.pngData()! as NSData)
         let bookFubaba = Book()
         bookFubaba.name = "富爸爸穷爸爸"
         bookFubaba.author = "[美]罗伯特.T.清崎"

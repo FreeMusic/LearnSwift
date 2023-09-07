@@ -253,7 +253,7 @@ class AlbumBottomView: UIView {
         doneBtn.layer.cornerRadius = 5
         doneBtn.layer.masksToBounds = true
         doneBtn.isEnabled = false
-        doneBtn.addTarget(self, action: #selector(done), for: UIControlEvents.touchUpInside)
+        doneBtn.addTarget(self, action: #selector(done), for: UIControl.Event.touchUpInside)
         addSubview(doneBtn)
         
         doneBtn.snp.makeConstraints { (make) in

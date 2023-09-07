@@ -172,7 +172,7 @@ class NoAuthorizedView: UIView {
         settingBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         settingBtn.titleLabel?.numberOfLines = 0
         settingBtn.titleLabel?.textAlignment = .center
-        settingBtn.addTarget(self, action: #selector(setting), for: UIControlEvents.touchUpInside)
+        settingBtn.addTarget(self, action: #selector(setting), for: UIControl.Event.touchUpInside)
         addSubview(settingBtn)
         
         settingBtn.snp.makeConstraints { (make) in
@@ -185,7 +185,7 @@ class NoAuthorizedView: UIView {
     }
     
     @objc func setting() {
-        let settingURL = URL(string: UIApplicationOpenSettingsURLString)
+        let settingURL = URL(string: UIApplication.openSettingsURLString)
         
         if UIApplication.shared.canOpenURL(settingURL!) {
             UIApplication.shared.openURL(settingURL!)
